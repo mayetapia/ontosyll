@@ -1,2 +1,3 @@
-# ontosyll
+# OntoSyllabus (ontosyll)
 Onto Syllabus
+
