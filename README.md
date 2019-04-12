@@ -21,7 +21,7 @@ NeOn is a methodology that supports to build ontologies and ontology networks. I
 </p>
 
 ## Syllabus Ontology Creation
-NeOn methodology propose activities to carry out the building of an ontology. In the next graph, we show the activities that we followed in the syllabus ontology creation.
+NeOn methodology proposes a set of activities to carry out the building of an ontology. In the next graph, we show the activities that we followed in the syllabus ontology creation.
 
 <p align="center">
   <img src="https://user-images.githubusercontent.com/43136359/56059536-25b9a600-5d19-11e9-9f3b-375242b3f5f2.PNG">
