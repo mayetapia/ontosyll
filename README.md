@@ -5,7 +5,6 @@ The syllabus is a relevant document to organize how the teaching-learning proces
   <img src="https://user-images.githubusercontent.com/43136359/56052216-b25a6900-5d05-11e9-8fbe-60f99f25c257.PNG">
 </p>
 
-![estudios previos](https://user-images.githubusercontent.com/43136359/56052216-b25a6900-5d05-11e9-8fbe-60f99f25c257.PNG)
 
 
 
