@@ -13,6 +13,13 @@ NeOn is a methodology that supports to build ontologies and ontology networks. I
   <img src="https://user-images.githubusercontent.com/43136359/56053061-e171da00-5d07-11e9-9cf3-04d33bc2e5ec.PNG">
 </p>
 
+## Waterfall Life Cycle Model
+To develop an ontology it is necessary to follow a life cycle model. A life cycle is a process divided into phases in which a product is developed. The waterfall model was selected because it is recommended in projects with a short duration. 
+
+<p align="center">
+  <img src="https://user-images.githubusercontent.com/43136359/56053398-d5d2e300-5d08-11e9-9a4a-8297048ca761.PNG">
+</p>
+
 
 
 
