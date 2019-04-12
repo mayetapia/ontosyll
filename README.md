@@ -7,7 +7,7 @@ The syllabus is a relevant document to organize how the teaching-learning proces
 </p>
 
 ## NeOn Methodology
-NeOn is a methodology that supports to build ontologies and ontology networks. It is a new trend that is the opposite of building new ontologies from scratch. The NeOn methodology defines nine scenarios. We used Scenario 3 and we combined it with Scenario 1 as is the suggestion of the methodology's author. We fit in Scenario 3 because there are a variety of ontologies available on the Web, in the academic context, which can be reused for building an ontology for syllabuses.
+NeOn is a methodology that supports to build ontologies and ontology networks. It is a new trend that is the opposite of building new ontologies from scratch. The NeOn methodology defines nine scenarios. We used Scenario 3 and we combined it with Scenario 1 as is the suggestion of the methodology's author. We fit in Scenario 3 because there are a variety of ontologies available on the Web, in the academic context which can be reused for building an ontology for syllabuses.
 
 <p align="center">
   <img src="https://user-images.githubusercontent.com/43136359/56053061-e171da00-5d07-11e9-9cf3-04d33bc2e5ec.PNG">
