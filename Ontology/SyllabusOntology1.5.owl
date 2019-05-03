@@ -1,0 +1,2539 @@
+<?xml version="1.0"?>
+<Ontology xmlns="http://www.w3.org/2002/07/owl#"
+     xml:base="http://purl.org/he/syllabus/ontology#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     ontologyIRI="http://purl.org/he/syllabus/ontology#">
+    <Prefix name="" IRI="http://purl.org/he/syllabus/ontology#"/>
+    <Prefix name="os" IRI="http://purl.org/he/syllabus/ontology#"/>
+    <Prefix name="ti" IRI="http://www.ontologydesignpatterns.org/cp/owl/timeinterval.owl#"/>
+    <Prefix name="dct" IRI="http://purl.org/dc/terms/"/>
+    <Prefix name="owl" IRI="http://www.w3.org/2002/07/owl#"/>
+    <Prefix name="pro" IRI="http://purl.org/spar/pro/"/>
+    <Prefix name="rdf" IRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
+    <Prefix name="tvc" IRI="http://www.essepuntato.it/2012/04/tvc/"/>
+    <Prefix name="xml" IRI="http://www.w3.org/XML/1998/namespace"/>
+    <Prefix name="xsd" IRI="http://www.w3.org/2001/XMLSchema#"/>
+    <Prefix name="foaf" IRI="http://xmlns.com/foaf/0.1/"/>
+    <Prefix name="frbr" IRI="http://purl.org/vocab/frbr/core#"/>
+    <Prefix name="ieee" IRI="http://www.teste/ontologies/IEEE_RCD_Impl.owl"/>
+    <Prefix name="rdfs" IRI="http://www.w3.org/2000/01/rdf-schema#"/>
+    <Prefix name="skos" IRI="http://www.w3.org/2004/02/skos/core#"/>
+    <Prefix name="time" IRI="http://www.w3.org/2006/time#"/>
+    <Prefix name="vivo" IRI="http://vivoweb.org/ontology/core#"/>
+    <Prefix name="aiiso" IRI="http://purl.org/vocab/aiiso/schema#"/>
+    <Prefix name="fabio" IRI="http://purl.org/spar/fabio/"/>
+    <Prefix name="sicra" IRI="http://www.fonte-project.net/ontologies/SICRA.owl"/>
+    <Prefix name="teach" IRI="http://linkedscience.org/teach/ns#"/>
+    <Prefix name="schema" IRI="http://schema.org/"/>
+    <Annotation>
+        <AnnotationProperty abbreviatedIRI="dct:creator"/>
+        <Literal>Mariela Tapia-Leon</Literal>
+    </Annotation>
+    <Annotation>
+        <AnnotationProperty abbreviatedIRI="dct:rights"/>
+        <Literal>Janneth Chicaiza</Literal>
+    </Annotation>
+    <Annotation>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <Literal xml:lang="en">Syllabus ontology provide a consensual knowledge model of syllabus domain. This model is a compilation of the main terms and objects for this particular domain and could be used by Higher Education Institutes.</Literal>
+    </Annotation>
+    <Annotation>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <Literal>This work is distribution under a Creative Commons Atribution License (https://creativecommons.org/licenses/by/4.0/legalcode)</Literal>
+    </Annotation>
+    <Annotation>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <Literal>Syllabus ontology</Literal>
+    </Annotation>
+    <Annotation>
+        <AnnotationProperty abbreviatedIRI="owl:versionInfo"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">1.4</Literal>
+    </Annotation>
+    <Declaration>
+        <Class abbreviatedIRI="teach:Assignment"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="teach:Course"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="teach:Teacher"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="dct:BibliographicResource"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="dct:LinguisticSystem"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="Accessibility"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="Assessment"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="Attendance"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="Classroom"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="Competence"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="Content"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="DropOut"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="GoalStatement"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="Help"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="Instructor"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="LearningObjective"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="LearningOutcome"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="Methodology"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="Policy"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="Qualification"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="Reviewer"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="Schedule"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="Syllabus"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="Topic"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="Workload"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="pro:Role"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="pro:RoleInTime"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="aiiso:Course"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="aiiso:Department"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="aiiso:Faculty"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="aiiso:KnowledgeGrouping"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="aiiso:School"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="frbr:Expression"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="frbr:Manifestation"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="frbr:Work"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="schema:Agent"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="schema:Audience"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="schema:Course"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="schema:CourseInstance"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="schema:EducationalOrganization"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="schema:Organization"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="schema:Person"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="schema:Place"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="vivo:AcademicDegree"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="vivo:AcademicTerm"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="vivo:AcademicYear"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="vivo:Course"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.fonte-project.net/ontologies/SICRA.owlTaxonomiaBloom"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="ti:TimeInterval"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.teste/ontologies/IEEE_RCD_Impl.owlCompetence"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="skos:Collection"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="skos:Concept"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="foaf:Agent"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="foaf:Organization"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="foaf:Person"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty abbreviatedIRI="teach:studyProgram"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty abbreviatedIRI="teach:teacher"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty abbreviatedIRI="dct:creator"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty abbreviatedIRI="dct:language"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty abbreviatedIRI="dct:tableOfContents"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="academicDegree"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="academicTerm"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="academicYear"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="approve"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="assessment"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="assignment"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="awardedBy"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="classroom"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="goal"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="hasSchedule"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="help"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="learningResource"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="methodology"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="policy"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="taxon"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="workload"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty abbreviatedIRI="fabio:hasManifestation"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty abbreviatedIRI="pro:holdsRoleInTime"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty abbreviatedIRI="pro:withRole"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty abbreviatedIRI="aiiso:part_of"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty abbreviatedIRI="frbr:embodiment"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty abbreviatedIRI="frbr:realization"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty abbreviatedIRI="schema:audience"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty abbreviatedIRI="schema:coursePrerequisites"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty abbreviatedIRI="schema:creator"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty abbreviatedIRI="schema:hasCourseInstance"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty abbreviatedIRI="schema:instructor"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty abbreviatedIRI="vivo:hasPrerequisite"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty abbreviatedIRI="tvc:atTime"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty abbreviatedIRI="skos:broader"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty abbreviatedIRI="skos:member"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty abbreviatedIRI="foaf:member"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty abbreviatedIRI="dct:description"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty abbreviatedIRI="dct:hasVersion"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty abbreviatedIRI="dct:title"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="bibliographicCitation"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="deadline"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="durationPerTerm"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="durationPerWeek"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="educationLevel"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="office"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="order"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="requirement"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="resume"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="score"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="studyStrategy"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="type"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="unitPerTerm"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="unitPerWeek"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="weight"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty abbreviatedIRI="aiiso:code"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty abbreviatedIRI="schema:address"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty abbreviatedIRI="schema:courseCode"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty abbreviatedIRI="schema:courseMode"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty abbreviatedIRI="schema:description"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty abbreviatedIRI="schema:email"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty abbreviatedIRI="schema:identifier"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty abbreviatedIRI="schema:name"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty abbreviatedIRI="schema:telephone"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty abbreviatedIRI="schema:url"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty abbreviatedIRI="vivo:courseCredits"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty abbreviatedIRI="ti:hasIntervalDate"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty abbreviatedIRI="ti:hasIntervalEndDate"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty abbreviatedIRI="ti:hasIntervalStartDate"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty abbreviatedIRI="foaf:name"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty abbreviatedIRI="dct:contributor"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty abbreviatedIRI="dct:creator"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty abbreviatedIRI="dct:rights"/>
+    </Declaration>
+    <EquivalentClasses>
+        <Class abbreviatedIRI="teach:Course"/>
+        <Class abbreviatedIRI="aiiso:Course"/>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class abbreviatedIRI="teach:Course"/>
+        <Class abbreviatedIRI="schema:Course"/>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class abbreviatedIRI="teach:Course"/>
+        <Class abbreviatedIRI="vivo:Course"/>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class abbreviatedIRI="teach:Teacher"/>
+        <Class IRI="Instructor"/>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="Competence"/>
+        <Class IRI="http://www.teste/ontologies/IEEE_RCD_Impl.owlCompetence"/>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class abbreviatedIRI="aiiso:Course"/>
+        <Class abbreviatedIRI="schema:Course"/>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class abbreviatedIRI="aiiso:Course"/>
+        <Class abbreviatedIRI="vivo:Course"/>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class abbreviatedIRI="schema:Agent"/>
+        <Class abbreviatedIRI="foaf:Agent"/>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class abbreviatedIRI="schema:Course"/>
+        <Class abbreviatedIRI="vivo:Course"/>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class abbreviatedIRI="schema:Organization"/>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class abbreviatedIRI="schema:Organization"/>
+        <Class abbreviatedIRI="foaf:Organization"/>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class abbreviatedIRI="schema:Person"/>
+        <Class abbreviatedIRI="foaf:Person"/>
+    </EquivalentClasses>
+    <SubClassOf>
+        <Class IRI="Accessibility"/>
+        <Class IRI="Policy"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="Attendance"/>
+        <Class IRI="Policy"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="Classroom"/>
+        <Class abbreviatedIRI="schema:Place"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="Competence"/>
+        <Class IRI="GoalStatement"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="Content"/>
+        <Class abbreviatedIRI="skos:Collection"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="DropOut"/>
+        <Class IRI="Policy"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="Instructor"/>
+        <Class abbreviatedIRI="schema:Person"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="LearningObjective"/>
+        <Class IRI="GoalStatement"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="LearningOutcome"/>
+        <Class IRI="GoalStatement"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="Qualification"/>
+        <Class IRI="Policy"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="Reviewer"/>
+        <Class abbreviatedIRI="pro:Role"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="Syllabus"/>
+        <Class abbreviatedIRI="frbr:Work"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="Topic"/>
+        <Class abbreviatedIRI="skos:Concept"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="aiiso:Department"/>
+        <Class abbreviatedIRI="schema:Organization"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="aiiso:Faculty"/>
+        <Class abbreviatedIRI="schema:Organization"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="aiiso:School"/>
+        <Class abbreviatedIRI="schema:Organization"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="schema:EducationalOrganization"/>
+        <Class abbreviatedIRI="schema:Organization"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="schema:Organization"/>
+        <Class abbreviatedIRI="schema:Agent"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="schema:Organization"/>
+        <Class abbreviatedIRI="foaf:Agent"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="schema:Person"/>
+        <Class abbreviatedIRI="schema:Agent"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="foaf:Organization"/>
+        <Class abbreviatedIRI="foaf:Agent"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="foaf:Person"/>
+        <Class abbreviatedIRI="foaf:Agent"/>
+    </SubClassOf>
+    <DisjointClasses>
+        <Class IRI="Accessibility"/>
+        <Class IRI="Attendance"/>
+        <Class IRI="DropOut"/>
+        <Class IRI="Qualification"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class abbreviatedIRI="schema:Organization"/>
+        <Class abbreviatedIRI="foaf:Person"/>
+    </DisjointClasses>
+    <EquivalentObjectProperties>
+        <ObjectProperty abbreviatedIRI="dct:creator"/>
+        <ObjectProperty abbreviatedIRI="schema:creator"/>
+    </EquivalentObjectProperties>
+    <EquivalentObjectProperties>
+        <ObjectProperty abbreviatedIRI="schema:coursePrerequisites"/>
+        <ObjectProperty abbreviatedIRI="vivo:hasPrerequisite"/>
+    </EquivalentObjectProperties>
+    <ObjectPropertyDomain>
+        <ObjectProperty abbreviatedIRI="teach:studyProgram"/>
+        <Class abbreviatedIRI="schema:Course"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty abbreviatedIRI="teach:teacher"/>
+        <Class abbreviatedIRI="teach:Course"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty abbreviatedIRI="dct:creator"/>
+        <Class IRI="Instructor"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty abbreviatedIRI="dct:language"/>
+        <Class abbreviatedIRI="schema:CourseInstance"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty abbreviatedIRI="dct:tableOfContents"/>
+        <Class IRI="Syllabus"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="academicDegree"/>
+        <ObjectIntersectionOf>
+            <Class abbreviatedIRI="schema:Course"/>
+            <Class abbreviatedIRI="foaf:Person"/>
+        </ObjectIntersectionOf>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="academicTerm"/>
+        <Class abbreviatedIRI="schema:CourseInstance"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="academicYear"/>
+        <Class abbreviatedIRI="schema:CourseInstance"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="approve"/>
+        <Class IRI="Reviewer"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="assessment"/>
+        <ObjectIntersectionOf>
+            <Class IRI="Syllabus"/>
+            <Class IRI="Topic"/>
+        </ObjectIntersectionOf>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="assignment"/>
+        <ObjectIntersectionOf>
+            <Class IRI="Syllabus"/>
+            <Class IRI="Topic"/>
+        </ObjectIntersectionOf>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="awardedBy"/>
+        <Class abbreviatedIRI="vivo:AcademicDegree"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="classroom"/>
+        <Class abbreviatedIRI="schema:CourseInstance"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="goal"/>
+        <Class IRI="Syllabus"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="hasSchedule"/>
+        <ObjectIntersectionOf>
+            <Class IRI="Instructor"/>
+            <Class abbreviatedIRI="schema:CourseInstance"/>
+        </ObjectIntersectionOf>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="help"/>
+        <Class IRI="Syllabus"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="learningResource"/>
+        <Class IRI="Syllabus"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="methodology"/>
+        <Class IRI="Syllabus"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="policy"/>
+        <Class IRI="Syllabus"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="taxon"/>
+        <Class IRI="GoalStatement"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="workload"/>
+        <Class IRI="Syllabus"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty abbreviatedIRI="fabio:hasManifestation"/>
+        <Class abbreviatedIRI="frbr:Work"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty abbreviatedIRI="pro:holdsRoleInTime"/>
+        <Class abbreviatedIRI="foaf:Agent"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty abbreviatedIRI="pro:withRole"/>
+        <Class abbreviatedIRI="pro:RoleInTime"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty abbreviatedIRI="aiiso:part_of"/>
+        <Class abbreviatedIRI="schema:Organization"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty abbreviatedIRI="frbr:embodiment"/>
+        <Class abbreviatedIRI="frbr:Expression"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty abbreviatedIRI="frbr:realization"/>
+        <Class abbreviatedIRI="frbr:Work"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty abbreviatedIRI="schema:audience"/>
+        <Class abbreviatedIRI="schema:Course"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty abbreviatedIRI="schema:coursePrerequisites"/>
+        <Class abbreviatedIRI="schema:Course"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty abbreviatedIRI="schema:creator"/>
+        <Class IRI="Instructor"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty abbreviatedIRI="schema:hasCourseInstance"/>
+        <Class abbreviatedIRI="schema:Course"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty abbreviatedIRI="schema:instructor"/>
+        <Class abbreviatedIRI="schema:CourseInstance"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty abbreviatedIRI="vivo:hasPrerequisite"/>
+        <Class abbreviatedIRI="vivo:Course"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty abbreviatedIRI="tvc:atTime"/>
+        <ObjectIntersectionOf>
+            <Class IRI="Schedule"/>
+            <Class abbreviatedIRI="pro:RoleInTime"/>
+            <Class abbreviatedIRI="schema:CourseInstance"/>
+        </ObjectIntersectionOf>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty abbreviatedIRI="skos:broader"/>
+        <Class abbreviatedIRI="skos:Concept"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty abbreviatedIRI="skos:member"/>
+        <Class abbreviatedIRI="skos:Collection"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty abbreviatedIRI="foaf:member"/>
+        <Class abbreviatedIRI="schema:Person"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyRange>
+        <ObjectProperty abbreviatedIRI="teach:studyProgram"/>
+        <Class IRI="Syllabus"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty abbreviatedIRI="teach:teacher"/>
+        <Class abbreviatedIRI="teach:Teacher"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty abbreviatedIRI="dct:creator"/>
+        <Class IRI="Syllabus"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty abbreviatedIRI="dct:language"/>
+        <Class abbreviatedIRI="dct:LinguisticSystem"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty abbreviatedIRI="dct:tableOfContents"/>
+        <Class IRI="Content"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="academicDegree"/>
+        <Class abbreviatedIRI="vivo:AcademicDegree"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="academicTerm"/>
+        <Class abbreviatedIRI="vivo:AcademicTerm"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="academicYear"/>
+        <Class abbreviatedIRI="vivo:AcademicYear"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="approve"/>
+        <Class IRI="Syllabus"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="assessment"/>
+        <Class IRI="Assessment"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="assignment"/>
+        <Class abbreviatedIRI="teach:Assignment"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="awardedBy"/>
+        <Class abbreviatedIRI="schema:EducationalOrganization"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="classroom"/>
+        <Class IRI="Classroom"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="goal"/>
+        <Class IRI="GoalStatement"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="hasSchedule"/>
+        <Class IRI="Schedule"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="help"/>
+        <Class IRI="Help"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="learningResource"/>
+        <Class abbreviatedIRI="dct:BibliographicResource"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="methodology"/>
+        <Class IRI="Methodology"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="policy"/>
+        <Class IRI="Policy"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="taxon"/>
+        <Class IRI="http://www.fonte-project.net/ontologies/SICRA.owlTaxonomiaBloom"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="workload"/>
+        <Class IRI="Workload"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty abbreviatedIRI="fabio:hasManifestation"/>
+        <Class abbreviatedIRI="frbr:Manifestation"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty abbreviatedIRI="pro:holdsRoleInTime"/>
+        <Class abbreviatedIRI="pro:RoleInTime"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty abbreviatedIRI="pro:withRole"/>
+        <Class abbreviatedIRI="pro:Role"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty abbreviatedIRI="aiiso:part_of"/>
+        <Class abbreviatedIRI="schema:Organization"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty abbreviatedIRI="frbr:embodiment"/>
+        <Class abbreviatedIRI="frbr:Manifestation"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty abbreviatedIRI="frbr:realization"/>
+        <Class abbreviatedIRI="frbr:Expression"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty abbreviatedIRI="schema:audience"/>
+        <Class abbreviatedIRI="schema:Audience"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty abbreviatedIRI="schema:coursePrerequisites"/>
+        <Class abbreviatedIRI="schema:Course"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty abbreviatedIRI="schema:creator"/>
+        <Class IRI="Syllabus"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty abbreviatedIRI="schema:hasCourseInstance"/>
+        <Class abbreviatedIRI="schema:CourseInstance"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty abbreviatedIRI="schema:instructor"/>
+        <Class IRI="Instructor"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty abbreviatedIRI="vivo:hasPrerequisite"/>
+        <Class abbreviatedIRI="vivo:Course"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty abbreviatedIRI="tvc:atTime"/>
+        <Class abbreviatedIRI="ti:TimeInterval"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty abbreviatedIRI="skos:broader"/>
+        <Class abbreviatedIRI="skos:Concept"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty abbreviatedIRI="skos:member"/>
+        <ObjectIntersectionOf>
+            <Class abbreviatedIRI="skos:Collection"/>
+            <Class abbreviatedIRI="skos:Concept"/>
+        </ObjectIntersectionOf>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty abbreviatedIRI="foaf:member"/>
+        <Class abbreviatedIRI="schema:Organization"/>
+    </ObjectPropertyRange>
+    <EquivalentDataProperties>
+        <DataProperty abbreviatedIRI="aiiso:code"/>
+        <DataProperty abbreviatedIRI="schema:courseCode"/>
+    </EquivalentDataProperties>
+    <SubDataPropertyOf>
+        <DataProperty abbreviatedIRI="schema:courseMode"/>
+        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
+    </SubDataPropertyOf>
+    <DataPropertyDomain>
+        <DataProperty abbreviatedIRI="dct:description"/>
+        <ObjectIntersectionOf>
+            <Class abbreviatedIRI="teach:Assignment"/>
+            <Class IRI="Assessment"/>
+            <Class IRI="Classroom"/>
+            <Class IRI="Help"/>
+            <Class IRI="Methodology"/>
+            <Class IRI="Policy"/>
+            <Class IRI="Syllabus"/>
+            <Class abbreviatedIRI="vivo:Course"/>
+        </ObjectIntersectionOf>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty abbreviatedIRI="dct:hasVersion"/>
+        <Class IRI="Syllabus"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty abbreviatedIRI="dct:title"/>
+        <Class IRI="Syllabus"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="bibliographicCitation"/>
+        <Class abbreviatedIRI="dct:BibliographicResource"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="deadline"/>
+        <ObjectIntersectionOf>
+            <Class abbreviatedIRI="teach:Assignment"/>
+            <Class IRI="Assessment"/>
+        </ObjectIntersectionOf>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="durationPerTerm"/>
+        <Class IRI="Workload"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="durationPerWeek"/>
+        <Class IRI="Workload"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="educationLevel"/>
+        <Class abbreviatedIRI="vivo:AcademicDegree"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="office"/>
+        <Class IRI="Instructor"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="order"/>
+        <Class IRI="Topic"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="requirement"/>
+        <Class IRI="Syllabus"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="resume"/>
+        <Class IRI="Instructor"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="score"/>
+        <ObjectIntersectionOf>
+            <Class abbreviatedIRI="teach:Assignment"/>
+            <Class IRI="Assessment"/>
+        </ObjectIntersectionOf>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="studyStrategy"/>
+        <Class IRI="Methodology"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="type"/>
+        <ObjectIntersectionOf>
+            <Class abbreviatedIRI="teach:Assignment"/>
+            <Class abbreviatedIRI="dct:BibliographicResource"/>
+            <Class IRI="Assessment"/>
+            <Class IRI="Classroom"/>
+            <Class IRI="Instructor"/>
+            <Class IRI="Topic"/>
+            <Class abbreviatedIRI="vivo:Course"/>
+        </ObjectIntersectionOf>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="unitPerTerm"/>
+        <Class IRI="Workload"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="unitPerWeek"/>
+        <Class IRI="Workload"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="weight"/>
+        <ObjectIntersectionOf>
+            <Class abbreviatedIRI="teach:Assignment"/>
+            <Class IRI="Assessment"/>
+        </ObjectIntersectionOf>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty abbreviatedIRI="aiiso:code"/>
+        <Class abbreviatedIRI="schema:Course"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty abbreviatedIRI="schema:address"/>
+        <Class abbreviatedIRI="schema:Place"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty abbreviatedIRI="schema:courseCode"/>
+        <Class abbreviatedIRI="schema:Course"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty abbreviatedIRI="schema:courseMode"/>
+        <Class abbreviatedIRI="schema:CourseInstance"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty abbreviatedIRI="schema:description"/>
+        <ObjectIntersectionOf>
+            <Class abbreviatedIRI="teach:Assignment"/>
+            <Class IRI="Assessment"/>
+            <Class IRI="Classroom"/>
+            <Class IRI="Help"/>
+            <Class IRI="Methodology"/>
+            <Class IRI="Policy"/>
+            <Class IRI="Syllabus"/>
+            <Class abbreviatedIRI="vivo:Course"/>
+        </ObjectIntersectionOf>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty abbreviatedIRI="schema:email"/>
+        <Class abbreviatedIRI="schema:Agent"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty abbreviatedIRI="schema:identifier"/>
+        <ObjectIntersectionOf>
+            <Class abbreviatedIRI="teach:Assignment"/>
+            <Class IRI="Assessment"/>
+            <Class IRI="Classroom"/>
+        </ObjectIntersectionOf>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty abbreviatedIRI="schema:name"/>
+        <ObjectIntersectionOf>
+            <Class abbreviatedIRI="schema:Agent"/>
+            <Class abbreviatedIRI="schema:Course"/>
+            <Class abbreviatedIRI="schema:Place"/>
+        </ObjectIntersectionOf>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty abbreviatedIRI="schema:telephone"/>
+        <Class abbreviatedIRI="schema:Agent"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty abbreviatedIRI="schema:url"/>
+        <ObjectIntersectionOf>
+            <Class IRI="Syllabus"/>
+            <Class abbreviatedIRI="foaf:Agent"/>
+        </ObjectIntersectionOf>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty abbreviatedIRI="vivo:courseCredits"/>
+        <Class abbreviatedIRI="schema:Course"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty abbreviatedIRI="ti:hasIntervalDate"/>
+        <Class abbreviatedIRI="ti:TimeInterval"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty abbreviatedIRI="ti:hasIntervalEndDate"/>
+        <Class abbreviatedIRI="ti:TimeInterval"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty abbreviatedIRI="ti:hasIntervalStartDate"/>
+        <Class abbreviatedIRI="ti:TimeInterval"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty abbreviatedIRI="foaf:name"/>
+        <ObjectIntersectionOf>
+            <Class abbreviatedIRI="schema:Agent"/>
+            <Class abbreviatedIRI="schema:Course"/>
+            <Class abbreviatedIRI="schema:Place"/>
+        </ObjectIntersectionOf>
+    </DataPropertyDomain>
+    <DataPropertyRange>
+        <DataProperty abbreviatedIRI="dct:description"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty abbreviatedIRI="dct:hasVersion"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty abbreviatedIRI="dct:title"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="bibliographicCitation"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="deadline"/>
+        <Datatype abbreviatedIRI="xsd:dateTime"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="durationPerTerm"/>
+        <Datatype abbreviatedIRI="xsd:nonNegativeInteger"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="durationPerWeek"/>
+        <Datatype abbreviatedIRI="xsd:nonNegativeInteger"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="educationLevel"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="office"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="order"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="requirement"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="resume"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="score"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="studyStrategy"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="type"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="unitPerTerm"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="unitPerWeek"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="weight"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty abbreviatedIRI="aiiso:code"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty abbreviatedIRI="schema:address"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty abbreviatedIRI="schema:courseCode"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty abbreviatedIRI="schema:courseMode"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty abbreviatedIRI="schema:description"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty abbreviatedIRI="schema:email"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty abbreviatedIRI="schema:identifier"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty abbreviatedIRI="schema:name"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty abbreviatedIRI="schema:telephone"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty abbreviatedIRI="schema:url"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty abbreviatedIRI="vivo:courseCredits"/>
+        <Datatype abbreviatedIRI="rdfs:Literal"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty abbreviatedIRI="ti:hasIntervalDate"/>
+        <Datatype abbreviatedIRI="xsd:dateTime"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty abbreviatedIRI="ti:hasIntervalEndDate"/>
+        <Datatype abbreviatedIRI="xsd:dateTime"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty abbreviatedIRI="ti:hasIntervalStartDate"/>
+        <Datatype abbreviatedIRI="xsd:dateTime"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty abbreviatedIRI="foaf:name"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <AbbreviatedIRI>teach:Assignment</AbbreviatedIRI>
+        <Literal>Assignment of a course, for example an exercise.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>teach:Assignment</AbbreviatedIRI>
+        <Literal>Assignment</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <AbbreviatedIRI>teach:Course</AbbreviatedIRI>
+        <Literal>Course is where students are supposed to learn something.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>teach:Course</AbbreviatedIRI>
+        <Literal>Course</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <AbbreviatedIRI>teach:Teacher</AbbreviatedIRI>
+        <Literal>Teacher of the course.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>teach:Teacher</AbbreviatedIRI>
+        <Literal>Professor</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>teach:Teacher</AbbreviatedIRI>
+        <Literal>Teacher</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <AbbreviatedIRI>teach:studyProgram</AbbreviatedIRI>
+        <Literal>Describes the study program which is associated with the course/seminar.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>teach:studyProgram</AbbreviatedIRI>
+        <Literal>study program</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>teach:studyProgram</AbbreviatedIRI>
+        <Literal>syllabus</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <AbbreviatedIRI>teach:teacher</AbbreviatedIRI>
+        <Literal>Teacher is an abstract property to relate a teacher to a course/seminar.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>teach:teacher</AbbreviatedIRI>
+        <Literal>teacher</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <AbbreviatedIRI>dct:BibliographicResource</AbbreviatedIRI>
+        <Literal>A book, article, or other documentary resource.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>dct:BibliographicResource</AbbreviatedIRI>
+        <Literal>Bibliographic Resource</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>dct:BibliographicResource</AbbreviatedIRI>
+        <Literal>Learning Resource</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <AbbreviatedIRI>dct:LinguisticSystem</AbbreviatedIRI>
+        <Literal>A system of signs, symbols, sounds, gestures, or rules used in communication.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>dct:LinguisticSystem</AbbreviatedIRI>
+        <Literal>Language</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>dct:LinguisticSystem</AbbreviatedIRI>
+        <Literal>Lingüistic System</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <AbbreviatedIRI>dct:creator</AbbreviatedIRI>
+        <Literal>An entity primarily responsible for making the resource.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>dct:creator</AbbreviatedIRI>
+        <Literal>creator</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <AbbreviatedIRI>dct:description</AbbreviatedIRI>
+        <Literal>An account of the resource.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>dct:description</AbbreviatedIRI>
+        <Literal>description</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <AbbreviatedIRI>dct:hasVersion</AbbreviatedIRI>
+        <Literal> A related resource that is a version, edition, or adaptation of the described resource.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>dct:hasVersion</AbbreviatedIRI>
+        <Literal>version</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <AbbreviatedIRI>dct:language</AbbreviatedIRI>
+        <Literal>A language of the resource.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>dct:language</AbbreviatedIRI>
+        <Literal>language</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <AbbreviatedIRI>dct:tableOfContents</AbbreviatedIRI>
+        <Literal>A list of subunits of the resource.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>dct:tableOfContents</AbbreviatedIRI>
+        <Literal>table of contents</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <AbbreviatedIRI>dct:title</AbbreviatedIRI>
+        <Literal>A name given to the resource.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>dct:title</AbbreviatedIRI>
+        <Literal>title</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>Accessibility</IRI>
+        <Literal>Policy to meet the requirements for class adaptation for students with disabilities.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>Accessibility</IRI>
+        <Literal>Accessibility</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>Assessment</IRI>
+        <Literal>Refers to the wide variety of methods or tools that educators use to evaluate, measure, and document the academic readiness, learning progress, skill acquisition, or educational needs of students.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>Assessment</IRI>
+        <Literal>Assessment</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>Attendance</IRI>
+        <Literal>Defines absences and tardiness, includes rules for attendance, and lays out disciplinary actions.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>Attendance</IRI>
+        <Literal>Attendance Policy</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>Classroom</IRI>
+        <Literal>A room in an educational intitution where groups of students are taught</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>Classroom</IRI>
+        <Literal>Classroom</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>Competence</IRI>
+        <Literal>A very specific statement that describes exactly what a student will be able to do in some measurable way. There may be more than one measurable outcome defined for a given competency.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>Competence</IRI>
+        <Literal>Competence</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>Competence</IRI>
+        <Literal>Competency</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>Content</IRI>
+        <Literal>A list of subunits of the resource.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>Content</IRI>
+        <Literal>Content</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>DropOut</IRI>
+        <Literal>Defines the actions by which a student may be removed from the course</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>DropOut</IRI>
+        <Literal>Drop out policy</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>GoalStatement</IRI>
+        <Literal>The goal statement is one of the most important parts of the definition syllabus. With clearly and concisely stated goals, the rest of the planning process falls naturally into place.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>GoalStatement</IRI>
+        <Literal>Goal Statement</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>Help</IRI>
+        <Literal>Information or advice given to reach success in a course</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>Help</IRI>
+        <Literal>Help</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>Instructor</IRI>
+        <Literal>A person assigned to instruct or provide instructional assistance for the CourseInstance.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>Instructor</IRI>
+        <Literal>Instructor</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>Instructor</IRI>
+        <Literal>Professor</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>Instructor</IRI>
+        <Literal>Teacher</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>LearningObjective</IRI>
+        <Literal>Learning objectives are statements that define the expected goal of a curriculum, course, lesson or activity interms of demonstrable skills or knowledge that will be acquired by a student as a result of instruction.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>LearningObjective</IRI>
+        <Literal>Learning objective</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>LearningOutcome</IRI>
+        <Literal>Learning outcomes are statements that describe significant and essential learning that learners have achieved, and can reliably demonstrate at the end of a course or program. In other words, learning outcomes identify what the learner will know and be able to do by the end of a course or program.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>LearningOutcome</IRI>
+        <Literal>Learning outcome</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>Methodology</IRI>
+        <Literal>A system of ways of doing, teaching, or studying something.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>Methodology</IRI>
+        <Literal>Methodology</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>Policy</IRI>
+        <Literal>Education policy are the principles and government policy-making in the educational sphere.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>Policy</IRI>
+        <Literal>Educational Policy</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>Qualification</IRI>
+        <Literal>The rules that determine a qualification.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>Qualification</IRI>
+        <Literal>Qualification Policy</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>Reviewer</IRI>
+        <Literal>The person who monitors, directs and approves the activities carried out by a group of people.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>Reviewer</IRI>
+        <Literal>Entity that approves a Syllabus</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>Schedule</IRI>
+        <Literal>Schedule of the class. It apply for tutoring, classes, laboratory, etc.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>Schedule</IRI>
+        <Literal>Schedule</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>Syllabus</IRI>
+        <Literal>A syllabus is a document that outlines everything that will be covered in a course</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>Syllabus</IRI>
+        <Literal>Syllabus</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>Topic</IRI>
+        <Literal>The topic or the subject of the course.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>Topic</IRI>
+        <Literal>Subject</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>Topic</IRI>
+        <Literal>Topic</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>Workload</IRI>
+        <Literal>The amount of work or of working time expected or assigned to do an activity.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>Workload</IRI>
+        <Literal>WorkLoad</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>academicDegree</IRI>
+        <Literal>An academic degree at any level, both as reported by individuals for employment and as offered by academic degree programs.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>academicDegree</IRI>
+        <Literal>academic degree</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>academicTerm</IRI>
+        <Literal>An explicit individual academic term, quarter, or semester rather than the generic fall, spring or summer semester.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>academicTerm</IRI>
+        <Literal>academic term</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>academicYear</IRI>
+        <Literal>An explicit individual period considered by an academic institution to be its primary academic cycle.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>academicYear</IRI>
+        <Literal>academic year</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>approve</IRI>
+        <Literal>Entity who approves the syllabus.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>approve</IRI>
+        <Literal>approved</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>assessment</IRI>
+        <Literal>An evaluation to decide the quality or importance of something.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>assessment</IRI>
+        <Literal>assessment</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>assignment</IRI>
+        <Literal>A piece of work given to someone, typically as part of their studies.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>assignment</IRI>
+        <Literal>assignment</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>awardedBy</IRI>
+        <Literal>Academic degree awared by an educational institution.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>awardedBy</IRI>
+        <Literal>awared</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>bibliographicCitation</IRI>
+        <Literal>A bibliographic reference for the resource.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>bibliographicCitation</IRI>
+        <Literal>bibliographic citation</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>classroom</IRI>
+        <Literal>A room in an educational intitution where groups of students are taught.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>classroom</IRI>
+        <Literal>classroom</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>deadline</IRI>
+        <Literal>Date the content expires and is no longer useful or available.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>deadline</IRI>
+        <Literal>deadline</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>durationPerTerm</IRI>
+        <Literal>duration of workload per term</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>durationPerTerm</IRI>
+        <Literal>duration per term</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>durationPerWeek</IRI>
+        <Literal>duration of workload per week</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>durationPerWeek</IRI>
+        <Literal>duration per week</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>educationLevel</IRI>
+        <Literal>A class of entity, defined in terms of progression through an educational or training context, for which the described resource is intended</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>educationLevel</IRI>
+        <Literal>education level</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>goal</IRI>
+        <Literal>The goal statement is one of the most important parts of the definition syllabus. With clearly and concisely stated goals, the rest of the planning process falls naturally into place.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>goal</IRI>
+        <Literal>goal</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>hasSchedule</IRI>
+        <Literal>Schedule of the class, laboratory, tutoring, etc.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>hasSchedule</IRI>
+        <Literal>schedule</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>help</IRI>
+        <Literal>Information or advice given to reach success in a course</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>help</IRI>
+        <Literal>help</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>learningResource</IRI>
+        <Literal>List of resources of the course.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>learningResource</IRI>
+        <Literal>learning resources</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>methodology</IRI>
+        <Literal>A system of ways of doing, teaching, or studying something.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>methodology</IRI>
+        <Literal>methodology</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>office</IRI>
+        <Literal>Office of the teacher</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>office</IRI>
+        <Literal>office</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>order</IRI>
+        <Literal>The sequence in which the study topics are arranged.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>order</IRI>
+        <Literal>order</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>policy</IRI>
+        <Literal>Education policy are the principles and government policy-making in the educational sphere.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>policy</IRI>
+        <Literal>policy</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>requirement</IRI>
+        <Literal>Requirements for taking the Course. May be completion of another Course or a textual description like &quot;permission of instructor&quot;. Requirements may be a pre-requisite competency, referenced using AlignmentObject.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>requirement</IRI>
+        <Literal>requirement</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>resume</IRI>
+        <Literal>Short written description of the teacher experience.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>resume</IRI>
+        <Literal>resume</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>score</IRI>
+        <Literal>The number of points obtained in an evaluation.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>score</IRI>
+        <Literal>score</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>studyStrategy</IRI>
+        <Literal>Study tips or strategies to improve your studies.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>studyStrategy</IRI>
+        <Literal>study strategy</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>taxon</IRI>
+        <Literal>Bloom’s Taxonomy is a classification of the different objectives and skills that educators set for their students (learning objectives).</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>taxon</IRI>
+        <Literal>Bloom taxonomy</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>type</IRI>
+        <Literal>Category or type of something.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>type</IRI>
+        <Literal>type</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>unitPerTerm</IRI>
+        <Literal>unit to measure workload by term</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>unitPerTerm</IRI>
+        <Literal>unit per term</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>unitPerWeek</IRI>
+        <Literal>unit to measure workload by week</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>unitPerWeek</IRI>
+        <Literal>unit per week</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>weight</IRI>
+        <Literal>weight of the assignment</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>weight</IRI>
+        <Literal>weight</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>workload</IRI>
+        <Literal>The amount of work or of working time expected or assigned to do an activity.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>workload</IRI>
+        <Literal>workload</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <AbbreviatedIRI>fabio:hasManifestation</AbbreviatedIRI>
+        <Literal>A property linking a particular work to its manifestations</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>fabio:hasManifestation</AbbreviatedIRI>
+        <Literal>has manifestation</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <AbbreviatedIRI>pro:Role</AbbreviatedIRI>
+        <Literal>A role an agent may have. Individual members of this class or its sub-classes are used to specify particular roles.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>pro:Role</AbbreviatedIRI>
+        <Literal>Role</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <AbbreviatedIRI>pro:RoleInTime</AbbreviatedIRI>
+        <Literal>A particular situation that describe a role an agent may have, that can be restricted to a particular time interval.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>pro:RoleInTime</AbbreviatedIRI>
+        <Literal>Role in Time</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <AbbreviatedIRI>pro:holdsRoleInTime</AbbreviatedIRI>
+        <Literal>A property relating an agent to a role that the agent holds.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>pro:holdsRoleInTime</AbbreviatedIRI>
+        <Literal>holds role in time</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <AbbreviatedIRI>pro:withRole</AbbreviatedIRI>
+        <Literal>An object property connecting an agent&apos;s role in time to a definition of the type of role held by this agent, specified as an instance of the class pro:Role or of one of its sub-classes.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>pro:withRole</AbbreviatedIRI>
+        <Literal>with role</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <AbbreviatedIRI>aiiso:Course</AbbreviatedIRI>
+        <Literal>A course is a KnowledgeGrouping that represents a cohesive collection of educational material referred to by the owning organization as a course.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>aiiso:Course</AbbreviatedIRI>
+        <Literal>Course</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <AbbreviatedIRI>aiiso:Department</AbbreviatedIRI>
+        <Literal>A Department is a group of people recognised by an organization as forming a cohesive group referred to by the organization as a department.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>aiiso:Department</AbbreviatedIRI>
+        <Literal>Department</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <AbbreviatedIRI>aiiso:Faculty</AbbreviatedIRI>
+        <Literal></Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <AbbreviatedIRI>aiiso:Faculty</AbbreviatedIRI>
+        <Literal>A Faculty is a group of people recognised by an organization as forming a cohesive group referred to by the organization as a faculty.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>aiiso:Faculty</AbbreviatedIRI>
+        <Literal>Faculty</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <AbbreviatedIRI>aiiso:KnowledgeGrouping</AbbreviatedIRI>
+        <Literal>A KnowledgeGrouping represents a collection of resources, learning objectives, timetables, and other materials.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>aiiso:KnowledgeGrouping</AbbreviatedIRI>
+        <Literal>Knowledge Grouping</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <AbbreviatedIRI>aiiso:School</AbbreviatedIRI>
+        <Literal>A School is a group of people recognised by an organization as forming a cohesive group referred to by the organization as a school.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>aiiso:School</AbbreviatedIRI>
+        <Literal>School</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <AbbreviatedIRI>aiiso:code</AbbreviatedIRI>
+        <Literal>A person assigned to instruct or provide instructional assistance for the CourseInstance.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>aiiso:code</AbbreviatedIRI>
+        <Literal>code</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <AbbreviatedIRI>aiiso:part_of</AbbreviatedIRI>
+        <Literal>A foaf Organization may refer to its parent Organizations using part_of.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>aiiso:part_of</AbbreviatedIRI>
+        <Literal>part of</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <AbbreviatedIRI>frbr:Expression</AbbreviatedIRI>
+        <Literal>The intellectual or artistic realization of a work in the form of alpha-numeric, musical, or choreographic notation, sound, image, object, movement, etc., or any combination of such forms.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>frbr:Expression</AbbreviatedIRI>
+        <Literal>Expression</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <AbbreviatedIRI>frbr:Manifestation</AbbreviatedIRI>
+        <Literal>The physical embodiment of an expression of a work.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>frbr:Manifestation</AbbreviatedIRI>
+        <Literal>Manifestation</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <AbbreviatedIRI>frbr:Work</AbbreviatedIRI>
+        <Literal>A distinct intellectual or artistic creation.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>frbr:Work</AbbreviatedIRI>
+        <Literal>Work</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <AbbreviatedIRI>frbr:embodiment</AbbreviatedIRI>
+        <Literal>An expression embodied in a manifestation.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>frbr:embodiment</AbbreviatedIRI>
+        <Literal>embodiment</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <AbbreviatedIRI>frbr:realization</AbbreviatedIRI>
+        <Literal>A work realized through an expression</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>frbr:realization</AbbreviatedIRI>
+        <Literal>realization</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <AbbreviatedIRI>schema:Agent</AbbreviatedIRI>
+        <Literal>The direct performer or driver of the action.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>schema:Agent</AbbreviatedIRI>
+        <Literal>Agent</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <AbbreviatedIRI>schema:Audience</AbbreviatedIRI>
+        <Literal>Intended audience for an item, i.e. the group for whom the item was created.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>schema:Audience</AbbreviatedIRI>
+        <Literal>Audience</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <AbbreviatedIRI>schema:Course</AbbreviatedIRI>
+        <Literal>A description of an educational course which may be offered as distinct instances at which take place at different times or take place at different locations, or be offered through different media or modes of study. An educational course is a sequence of one or more educational events and/or creative works which aims to build knowledge, competence or ability of learners.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>schema:Course</AbbreviatedIRI>
+        <Literal>Course</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <AbbreviatedIRI>schema:CourseInstance</AbbreviatedIRI>
+        <Literal>An instance of a Course which is distinct from other instances because it is offered at a different time or location or through different media or modes of study or to a specific section of students.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>schema:CourseInstance</AbbreviatedIRI>
+        <Literal>Course instance</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <AbbreviatedIRI>schema:EducationalOrganization</AbbreviatedIRI>
+        <Literal>An educational organization.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>schema:EducationalOrganization</AbbreviatedIRI>
+        <Literal>Educational Organization</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <AbbreviatedIRI>schema:Organization</AbbreviatedIRI>
+        <Literal>An organization such as a school.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <AbbreviatedIRI>schema:Organization</AbbreviatedIRI>
+        <Literal>The Organization class represents a kind of Agent corresponding to social instititutions such as companies, societies etc.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>schema:Organization</AbbreviatedIRI>
+        <Literal>Organization</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <AbbreviatedIRI>schema:Person</AbbreviatedIRI>
+        <Literal>A person (alive, dead, undead, of fictional).</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>schema:Person</AbbreviatedIRI>
+        <Literal>Person</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <AbbreviatedIRI>schema:Place</AbbreviatedIRI>
+        <Literal>Entities that have a somewhat fixed, physical extension.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>schema:Place</AbbreviatedIRI>
+        <Literal>Place</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <AbbreviatedIRI>schema:address</AbbreviatedIRI>
+        <Literal>Physical address of the item.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>schema:address</AbbreviatedIRI>
+        <Literal>address</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <AbbreviatedIRI>schema:audience</AbbreviatedIRI>
+        <Literal>Intended audience for an item, i.e. the group for whom the item was created.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>schema:audience</AbbreviatedIRI>
+        <Literal>audience</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <AbbreviatedIRI>schema:courseCode</AbbreviatedIRI>
+        <Literal>The identifier for the Course used by the course provider.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>schema:courseCode</AbbreviatedIRI>
+        <Literal>code</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <AbbreviatedIRI>schema:courseMode</AbbreviatedIRI>
+        <Literal>The medium or means of delivery of the course instance or the mode of study, either as a text label (e.g. &quot;online&quot;, &quot;onsite&quot; or &quot;blended&quot;; &quot;synchronous&quot; or &quot;asynchronous&quot;; &quot;full-time&quot; or &quot;part-time&quot;) or as a URL reference to a term from a controlled vocabulary.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>schema:courseMode</AbbreviatedIRI>
+        <Literal>course mode</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <AbbreviatedIRI>schema:coursePrerequisites</AbbreviatedIRI>
+        <Literal>Requirements for taking the Course.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>schema:coursePrerequisites</AbbreviatedIRI>
+        <Literal>prerequisite</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <AbbreviatedIRI>schema:creator</AbbreviatedIRI>
+        <Literal>The creator/author of this CreativeWork. This is the same as the Author property for CreativeWork.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>schema:creator</AbbreviatedIRI>
+        <Literal>creator</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <AbbreviatedIRI>schema:description</AbbreviatedIRI>
+        <Literal>A description of the item.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>schema:description</AbbreviatedIRI>
+        <Literal>description</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <AbbreviatedIRI>schema:email</AbbreviatedIRI>
+        <Literal>Email address.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>schema:email</AbbreviatedIRI>
+        <Literal>email</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <AbbreviatedIRI>schema:hasCourseInstance</AbbreviatedIRI>
+        <Literal>An offering of the course at a specific time and place or through specific media or mode of study or to a specific section of students.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>schema:hasCourseInstance</AbbreviatedIRI>
+        <Literal>course instance</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <AbbreviatedIRI>schema:identifier</AbbreviatedIRI>
+        <Literal>The number o identifier of a class or activity.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>schema:identifier</AbbreviatedIRI>
+        <Literal>identifier</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <AbbreviatedIRI>schema:instructor</AbbreviatedIRI>
+        <Literal>A person assigned to instruct or provide instructional assistance for the CourseInstance.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>schema:instructor</AbbreviatedIRI>
+        <Literal>instructor</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>schema:instructor</AbbreviatedIRI>
+        <Literal>professor</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <AbbreviatedIRI>schema:name</AbbreviatedIRI>
+        <Literal>The name of the item.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>schema:name</AbbreviatedIRI>
+        <Literal>name</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <AbbreviatedIRI>schema:telephone</AbbreviatedIRI>
+        <Literal>The telephone number.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>schema:telephone</AbbreviatedIRI>
+        <Literal>telephone</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <AbbreviatedIRI>schema:url</AbbreviatedIRI>
+        <Literal>URL of the resource</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>schema:url</AbbreviatedIRI>
+        <Literal>url</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <AbbreviatedIRI>vivo:AcademicDegree</AbbreviatedIRI>
+        <Literal>An academic degree at any level, both as reported by individuals for employment and as offered by academic degree programs.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>vivo:AcademicDegree</AbbreviatedIRI>
+        <Literal>Academic Degree</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <AbbreviatedIRI>vivo:AcademicTerm</AbbreviatedIRI>
+        <Literal>An explicit individual academic term, quarter, or semester rather than the generic fall, spring or summer semester.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>vivo:AcademicTerm</AbbreviatedIRI>
+        <Literal>Academic Term</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <AbbreviatedIRI>vivo:AcademicYear</AbbreviatedIRI>
+        <Literal>An explicit individual period considered by an academic institution to be its primary academic cycle.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>vivo:AcademicYear</AbbreviatedIRI>
+        <Literal>Academic Year</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <AbbreviatedIRI>vivo:Course</AbbreviatedIRI>
+        <Literal>A course as taught in one time period by one or more instructors, normally but not always for credit.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>vivo:Course</AbbreviatedIRI>
+        <Literal>Course</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <AbbreviatedIRI>vivo:courseCredits</AbbreviatedIRI>
+        <Literal>Number of credits assigned a course by an learning institution.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>vivo:courseCredits</AbbreviatedIRI>
+        <Literal>course credits</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <AbbreviatedIRI>vivo:hasPrerequisite</AbbreviatedIRI>
+        <Literal>The prerequisites for taking the course.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>vivo:hasPrerequisite</AbbreviatedIRI>
+        <Literal>prerequisite</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <AbbreviatedIRI>tvc:atTime</AbbreviatedIRI>
+        <Literal>time of the event</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>tvc:atTime</AbbreviatedIRI>
+        <Literal>at Time</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>http://www.fonte-project.net/ontologies/SICRA.owlTaxonomiaBloom</IRI>
+        <Literal>Bloom’s Taxonomy is a classification of the different objectives and skills that educators set for their students (learning objectives).</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://www.fonte-project.net/ontologies/SICRA.owlTaxonomiaBloom</IRI>
+        <Literal>Bloom taxonomy</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <AbbreviatedIRI>ti:TimeInterval</AbbreviatedIRI>
+        <Literal>To represent time intervals.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>ti:TimeInterval</AbbreviatedIRI>
+        <Literal>Time Interval</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <AbbreviatedIRI>ti:hasIntervalDate</AbbreviatedIRI>
+        <Literal>A datatype property that encodes values from xsd:date for a time interval; a same time interval can have more than one xsd:date value: begin date, end date, date at which the interval holds, as well as dates expressed in different formats: xsd:gYear, xsd:dateTime, etc.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>ti:hasIntervalDate</AbbreviatedIRI>
+        <Literal>has interval date</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <AbbreviatedIRI>ti:hasIntervalEndDate</AbbreviatedIRI>
+        <Literal>The end date of a time interval.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>ti:hasIntervalEndDate</AbbreviatedIRI>
+        <Literal>end date</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <AbbreviatedIRI>ti:hasIntervalStartDate</AbbreviatedIRI>
+        <Literal>The start date of a time interval.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>ti:hasIntervalStartDate</AbbreviatedIRI>
+        <Literal>start date</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>http://www.teste/ontologies/IEEE_RCD_Impl.owlCompetence</IRI>
+        <Literal xml:lang="pt">Corresponde ao conceito &quot;Reusable Competency Definition&quot; da norma IEEE 1484.20.1</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://www.teste/ontologies/IEEE_RCD_Impl.owlCompetence</IRI>
+        <Literal>Competence</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <AbbreviatedIRI>skos:Collection</AbbreviatedIRI>
+        <Literal>Collections are labeled and/or ordered groups of SKOS concepts.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>skos:Collection</AbbreviatedIRI>
+        <Literal>Collection</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <AbbreviatedIRI>skos:Concept</AbbreviatedIRI>
+        <Literal>A SKOS concept can be viewed as an idea or notion; a unit of thought.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>skos:Concept</AbbreviatedIRI>
+        <Literal>Concept</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <AbbreviatedIRI>skos:broader</AbbreviatedIRI>
+        <Literal>has skos broader</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>skos:broader</AbbreviatedIRI>
+        <Literal>broader</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <AbbreviatedIRI>skos:member</AbbreviatedIRI>
+        <Literal>Collection has member</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>skos:member</AbbreviatedIRI>
+        <Literal>has member</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <AbbreviatedIRI>foaf:Agent</AbbreviatedIRI>
+        <Literal>An agent (eg. person, group, software or physical artifact). </Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>foaf:Agent</AbbreviatedIRI>
+        <Literal>Agent</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <AbbreviatedIRI>foaf:Organization</AbbreviatedIRI>
+        <Literal>The Organization class represents a kind of Agent corresponding to social instititutions such as companies, societies etc.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>foaf:Organization</AbbreviatedIRI>
+        <Literal>Organization</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <AbbreviatedIRI>foaf:Person</AbbreviatedIRI>
+        <Literal>A person.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>foaf:Person</AbbreviatedIRI>
+        <Literal>Person</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <AbbreviatedIRI>foaf:member</AbbreviatedIRI>
+        <Literal>Indicates a member of a Group.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>foaf:member</AbbreviatedIRI>
+        <Literal>member of a group</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <AbbreviatedIRI>foaf:name</AbbreviatedIRI>
+        <Literal>The name of something is a simple textual string.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>foaf:name</AbbreviatedIRI>
+        <Literal>name</Literal>
+    </AnnotationAssertion>
+</Ontology>
+
+
+
+<!-- Generated by the OWL API (version 4.5.7.2018-12-02T02:23:35Z) https://github.com/owlcs/owlapi -->
+
