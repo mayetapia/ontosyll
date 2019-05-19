@@ -1,0 +1,2810 @@
+{
+  "_comment" : "Created with OWL2VOWL (version 0.3.5), http://vowl.visualdataweb.org",
+  "header" : {
+    "languages" : [ "pt", "en", "undefined" ],
+    "baseIris" : [ "http://www.w3.org/1999/02/22-rdf-syntax-ns", "http://schema.org", "http://www.w3.org/2002/07/owl", "http://www.essepuntato.it/2012/04/tvc", "http://www.w3.org/2001/XMLSchema", "http://purl.org/spar/fabio", "http://linkedscience.org/teach/ns", "http://purl.org/vocab/aiiso/schema", "http://purl.org/spar/pro", "http://vivoweb.org/ontology/core", "http://www.w3.org/2000/01/rdf-schema", "http://www.ontologydesignpatterns.org/cp/owl/timeinterval.owl", "http://purl.org/dc/terms", "http://xmlns.com/foaf/0.1", "http://purl.org/vocab/frbr/core", "http://www.fonte-project.net/ontologies", "http://purl.org/he/syllabus/ontology", "http://www.teste/ontologies", "http://www.w3.org/2004/02/skos/core" ],
+    "iri" : "http://purl.org/he/syllabus/ontology#",
+    "version" : "1.4",
+    "author" : [ "Mariela Tapia-Leon" ],
+    "labels" : {
+      "undefined" : "Syllabus ontology"
+    },
+    "comments" : {
+      "en" : "Syllabus ontology provide a consensual knowledge model of syllabus domain. This model is a compilation of the main terms and objects for this particular domain and could be used by Higher Education Institutes.",
+      "undefined" : "This work is distribution under a Creative Commons Atribution License (https://creativecommons.org/licenses/by/4.0/legalcode)"
+    },
+    "other" : {
+      "creator" : [ {
+        "identifier" : "creator",
+        "language" : "undefined",
+        "value" : "Mariela Tapia-Leon",
+        "type" : "label"
+      } ],
+      "rights" : [ {
+        "identifier" : "rights",
+        "language" : "undefined",
+        "value" : "Janneth Chicaiza",
+        "type" : "label"
+      } ],
+      "versionInfo" : [ {
+        "identifier" : "versionInfo",
+        "language" : "undefined",
+        "value" : "1.4",
+        "type" : "label"
+      } ]
+    }
+  },
+  "namespace" : [ ],
+  "class" : [ {
+    "id" : "0",
+    "type" : "owl:Class"
+  }, {
+    "id" : "1",
+    "type" : "owl:Class"
+  }, {
+    "id" : "5",
+    "type" : "owl:Class"
+  }, {
+    "id" : "8",
+    "type" : "owl:Class"
+  }, {
+    "id" : "12",
+    "type" : "owl:Class"
+  }, {
+    "id" : "31",
+    "type" : "owl:equivalentClass"
+  }, {
+    "id" : "45",
+    "type" : "owl:Class"
+  }, {
+    "id" : "46",
+    "type" : "owl:Class"
+  }, {
+    "id" : "48",
+    "type" : "owl:Class"
+  }, {
+    "id" : "51",
+    "type" : "owl:Class"
+  }, {
+    "id" : "59",
+    "type" : "owl:Class"
+  }, {
+    "id" : "63",
+    "type" : "owl:Class"
+  }, {
+    "id" : "3",
+    "type" : "owl:Class"
+  }, {
+    "id" : "64",
+    "type" : "owl:equivalentClass"
+  }, {
+    "id" : "71",
+    "type" : "owl:Class"
+  }, {
+    "id" : "32",
+    "type" : "owl:equivalentClass"
+  }, {
+    "id" : "74",
+    "type" : "owl:Class"
+  }, {
+    "id" : "7",
+    "type" : "owl:equivalentClass"
+  }, {
+    "id" : "60",
+    "type" : "owl:Class"
+  }, {
+    "id" : "79",
+    "type" : "owl:Class"
+  }, {
+    "id" : "23",
+    "type" : "owl:Class"
+  }, {
+    "id" : "13",
+    "type" : "owl:Class"
+  }, {
+    "id" : "49",
+    "type" : "owl:Class"
+  }, {
+    "id" : "76",
+    "type" : "owl:Class"
+  }, {
+    "id" : "39",
+    "type" : "owl:Class"
+  }, {
+    "id" : "98",
+    "type" : "owl:Class"
+  }, {
+    "id" : "87",
+    "type" : "owl:Class"
+  }, {
+    "id" : "102",
+    "type" : "owl:Class"
+  }, {
+    "id" : "108",
+    "type" : "owl:Class"
+  }, {
+    "id" : "29",
+    "type" : "owl:Class"
+  }, {
+    "id" : "112",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "109",
+    "type" : "owl:Class"
+  }, {
+    "id" : "66",
+    "type" : "owl:equivalentClass"
+  }, {
+    "id" : "89",
+    "type" : "owl:Class"
+  }, {
+    "id" : "116",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "37",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "34",
+    "type" : "owl:equivalentClass"
+  }, {
+    "id" : "117",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "119",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "36",
+    "type" : "owl:intersectionOf"
+  }, {
+    "id" : "78",
+    "type" : "owl:equivalentClass"
+  }, {
+    "id" : "44",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "92",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "120",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "21",
+    "type" : "owl:Class"
+  }, {
+    "id" : "73",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "30",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "75",
+    "type" : "owl:Class"
+  }, {
+    "id" : "56",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "122",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "94",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "123",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "124",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "125",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "62",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "11",
+    "type" : "owl:intersectionOf"
+  }, {
+    "id" : "113",
+    "type" : "owl:equivalentClass"
+  }, {
+    "id" : "15",
+    "type" : "owl:intersectionOf"
+  }, {
+    "id" : "105",
+    "type" : "owl:intersectionOf"
+  }, {
+    "id" : "54",
+    "type" : "rdfs:Literal"
+  }, {
+    "id" : "138",
+    "type" : "owl:equivalentClass"
+  }, {
+    "id" : "107",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "4",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "53",
+    "type" : "owl:Thing"
+  }, {
+    "id" : "27",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "133",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "132",
+    "type" : "owl:intersectionOf"
+  }, {
+    "id" : "144",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "145",
+    "type" : "rdfs:Literal"
+  }, {
+    "id" : "140",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "82",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "9",
+    "type" : "owl:Class"
+  }, {
+    "id" : "26",
+    "type" : "owl:intersectionOf"
+  }, {
+    "id" : "16",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "86",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "152",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "137",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "141",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "153",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "100",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "58",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "77",
+    "type" : "owl:Class"
+  }, {
+    "id" : "65",
+    "type" : "owl:equivalentClass"
+  }, {
+    "id" : "18",
+    "type" : "owl:Class"
+  }, {
+    "id" : "84",
+    "type" : "owl:Class"
+  }, {
+    "id" : "41",
+    "type" : "owl:equivalentClass"
+  }, {
+    "id" : "161",
+    "type" : "owl:Class"
+  }, {
+    "id" : "96",
+    "type" : "owl:Class"
+  }, {
+    "id" : "111",
+    "type" : "owl:Class"
+  }, {
+    "id" : "115",
+    "type" : "owl:equivalentClass"
+  }, {
+    "id" : "24",
+    "type" : "owl:Class"
+  }, {
+    "id" : "148",
+    "type" : "owl:equivalentClass"
+  }, {
+    "id" : "127",
+    "type" : "owl:Class"
+  }, {
+    "id" : "20",
+    "type" : "owl:intersectionOf"
+  }, {
+    "id" : "68",
+    "type" : "owl:intersectionOf"
+  }, {
+    "id" : "188",
+    "type" : "owl:intersectionOf"
+  }, {
+    "id" : "33",
+    "type" : "owl:equivalentClass"
+  }, {
+    "id" : "69",
+    "type" : "owl:Class"
+  }, {
+    "id" : "47",
+    "type" : "owl:Class"
+  } ],
+  "classAttribute" : [ {
+    "iri" : "http://purl.org/he/syllabus/ontology#Methodology",
+    "baseIri" : "http://purl.org/he/syllabus/ontology",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Methodology",
+      "undefined" : "Methodology"
+    },
+    "comment" : {
+      "undefined" : "A system of ways of doing, teaching, or studying something."
+    },
+    "id" : "0"
+  }, {
+    "iri" : "http://purl.org/he/syllabus/ontology#Help",
+    "baseIri" : "http://purl.org/he/syllabus/ontology",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Help",
+      "undefined" : "Help"
+    },
+    "comment" : {
+      "undefined" : "Information or advice given to reach success in a course"
+    },
+    "id" : "1"
+  }, {
+    "iri" : "http://purl.org/vocab/frbr/core#Expression",
+    "baseIri" : "http://purl.org/vocab/frbr/core",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Expression",
+      "undefined" : "Expression"
+    },
+    "comment" : {
+      "undefined" : "The intellectual or artistic realization of a work in the form of alpha-numeric, musical, or choreographic notation, sound, image, object, movement, etc., or any combination of such forms."
+    },
+    "attributes" : [ "external" ],
+    "id" : "5"
+  }, {
+    "iri" : "http://purl.org/he/syllabus/ontology#LearningOutcome",
+    "baseIri" : "http://purl.org/he/syllabus/ontology",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "LearningOutcome",
+      "undefined" : "Learning outcome"
+    },
+    "comment" : {
+      "undefined" : "Learning outcomes are statements that describe significant and essential learning that learners have achieved, and can reliably demonstrate at the end of a course or program. In other words, learning outcomes identify what the learner will know and be able to do by the end of a course or program."
+    },
+    "id" : "8",
+    "superClasses" : [ "9" ]
+  }, {
+    "iri" : "http://purl.org/he/syllabus/ontology#Attendance",
+    "baseIri" : "http://purl.org/he/syllabus/ontology",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Attendance",
+      "undefined" : "Attendance Policy"
+    },
+    "comment" : {
+      "undefined" : "Defines absences and tardiness, includes rules for attendance, and lays out disciplinary actions."
+    },
+    "id" : "12",
+    "superClasses" : [ "13" ]
+  }, {
+    "iri" : "http://vivoweb.org/ontology/core#Course",
+    "equivalent" : [ "32", "33", "34" ],
+    "baseIri" : "http://vivoweb.org/ontology/core",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Course",
+      "undefined" : "Course"
+    },
+    "comment" : {
+      "undefined" : "A course as taught in one time period by one or more instructors, normally but not always for credit."
+    },
+    "attributes" : [ "equivalent", "external" ],
+    "id" : "31"
+  }, {
+    "iri" : "http://purl.org/spar/pro/RoleInTime",
+    "baseIri" : "http://purl.org/spar/pro",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "RoleInTime",
+      "undefined" : "Role in Time"
+    },
+    "comment" : {
+      "undefined" : "A particular situation that describe a role an agent may have, that can be restricted to a particular time interval."
+    },
+    "attributes" : [ "external" ],
+    "id" : "45"
+  }, {
+    "iri" : "http://schema.org/Place",
+    "baseIri" : "http://schema.org",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Place",
+      "undefined" : "Place"
+    },
+    "subClasses" : [ "47" ],
+    "comment" : {
+      "undefined" : "Entities that have a somewhat fixed, physical extension."
+    },
+    "attributes" : [ "external" ],
+    "id" : "46"
+  }, {
+    "iri" : "http://www.w3.org/2004/02/skos/core#Collection",
+    "baseIri" : "http://www.w3.org/2004/02/skos/core",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Collection",
+      "undefined" : "Collection"
+    },
+    "subClasses" : [ "49" ],
+    "comment" : {
+      "undefined" : "Collections are labeled and/or ordered groups of SKOS concepts."
+    },
+    "attributes" : [ "external" ],
+    "id" : "48"
+  }, {
+    "iri" : "http://purl.org/he/syllabus/ontology#Workload",
+    "baseIri" : "http://purl.org/he/syllabus/ontology",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Workload",
+      "undefined" : "WorkLoad"
+    },
+    "comment" : {
+      "undefined" : "The amount of work or of working time expected or assigned to do an activity."
+    },
+    "id" : "51"
+  }, {
+    "iri" : "http://purl.org/spar/pro/Role",
+    "baseIri" : "http://purl.org/spar/pro",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Role",
+      "undefined" : "Role"
+    },
+    "subClasses" : [ "60" ],
+    "comment" : {
+      "undefined" : "A role an agent may have. Individual members of this class or its sub-classes are used to specify particular roles."
+    },
+    "attributes" : [ "external" ],
+    "id" : "59"
+  }, {
+    "iri" : "http://purl.org/he/syllabus/ontology#Assessment",
+    "baseIri" : "http://purl.org/he/syllabus/ontology",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Assessment",
+      "undefined" : "Assessment"
+    },
+    "comment" : {
+      "undefined" : "Refers to the wide variety of methods or tools that educators use to evaluate, measure, and document the academic readiness, learning progress, skill acquisition, or educational needs of students."
+    },
+    "id" : "63"
+  }, {
+    "iri" : "http://www.ontologydesignpatterns.org/cp/owl/timeinterval.owl#TimeInterval",
+    "baseIri" : "http://www.ontologydesignpatterns.org/cp/owl/timeinterval.owl",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "TimeInterval",
+      "undefined" : "Time Interval"
+    },
+    "comment" : {
+      "undefined" : "To represent time intervals."
+    },
+    "attributes" : [ "external" ],
+    "id" : "3"
+  }, {
+    "iri" : "http://schema.org/Agent",
+    "equivalent" : [ "66" ],
+    "baseIri" : "http://schema.org",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Agent",
+      "undefined" : "Agent"
+    },
+    "subClasses" : [ "7", "65" ],
+    "comment" : {
+      "undefined" : "The direct performer or driver of the action."
+    },
+    "attributes" : [ "equivalent", "external" ],
+    "id" : "64"
+  }, {
+    "iri" : "http://purl.org/he/syllabus/ontology#DropOut",
+    "baseIri" : "http://purl.org/he/syllabus/ontology",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "DropOut",
+      "undefined" : "Drop out policy"
+    },
+    "comment" : {
+      "undefined" : "Defines the actions by which a student may be removed from the course"
+    },
+    "id" : "71",
+    "superClasses" : [ "13" ]
+  }, {
+    "iri" : "http://purl.org/vocab/aiiso/schema#Course",
+    "equivalent" : [ "31", "33", "34" ],
+    "baseIri" : "http://purl.org/vocab/aiiso/schema",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Course",
+      "undefined" : "Course"
+    },
+    "comment" : {
+      "undefined" : "A course is a KnowledgeGrouping that represents a cohesive collection of educational material referred to by the owning organization as a course."
+    },
+    "attributes" : [ "equivalent", "external" ],
+    "id" : "32"
+  }, {
+    "iri" : "http://purl.org/vocab/aiiso/schema#School",
+    "baseIri" : "http://purl.org/vocab/aiiso/schema",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "School",
+      "undefined" : "School"
+    },
+    "comment" : {
+      "undefined" : "A School is a group of people recognised by an organization as forming a cohesive group referred to by the organization as a school."
+    },
+    "attributes" : [ "external" ],
+    "id" : "74",
+    "superClasses" : [ "7" ]
+  }, {
+    "iri" : "http://schema.org/Organization",
+    "equivalent" : [ "78" ],
+    "baseIri" : "http://schema.org",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Organization",
+      "undefined" : "Organization"
+    },
+    "subClasses" : [ "75", "76", "74", "77" ],
+    "comment" : {
+      "undefined" : "The Organization class represents a kind of Agent corresponding to social instititutions such as companies, societies etc."
+    },
+    "attributes" : [ "equivalent", "external" ],
+    "id" : "7",
+    "superClasses" : [ "64", "66" ]
+  }, {
+    "iri" : "http://purl.org/he/syllabus/ontology#Reviewer",
+    "baseIri" : "http://purl.org/he/syllabus/ontology",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Reviewer",
+      "undefined" : "Entity that approves a Syllabus"
+    },
+    "comment" : {
+      "undefined" : "The person who monitors, directs and approves the activities carried out by a group of people."
+    },
+    "id" : "60",
+    "superClasses" : [ "59" ]
+  }, {
+    "iri" : "http://purl.org/he/syllabus/ontology#Qualification",
+    "baseIri" : "http://purl.org/he/syllabus/ontology",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Qualification",
+      "undefined" : "Qualification Policy"
+    },
+    "comment" : {
+      "undefined" : "The rules that determine a qualification."
+    },
+    "id" : "79",
+    "superClasses" : [ "13" ]
+  }, {
+    "iri" : "http://schema.org/CourseInstance",
+    "baseIri" : "http://schema.org",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "CourseInstance",
+      "undefined" : "Course instance"
+    },
+    "comment" : {
+      "undefined" : "An instance of a Course which is distinct from other instances because it is offered at a different time or location or through different media or modes of study or to a specific section of students."
+    },
+    "attributes" : [ "external" ],
+    "id" : "23"
+  }, {
+    "iri" : "http://purl.org/he/syllabus/ontology#Policy",
+    "baseIri" : "http://purl.org/he/syllabus/ontology",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Policy",
+      "undefined" : "Educational Policy"
+    },
+    "subClasses" : [ "12", "87", "71", "79" ],
+    "comment" : {
+      "undefined" : "Education policy are the principles and government policy-making in the educational sphere."
+    },
+    "id" : "13"
+  }, {
+    "iri" : "http://purl.org/he/syllabus/ontology#Content",
+    "baseIri" : "http://purl.org/he/syllabus/ontology",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Content",
+      "undefined" : "Content"
+    },
+    "comment" : {
+      "undefined" : "A list of subunits of the resource."
+    },
+    "id" : "49",
+    "superClasses" : [ "48" ]
+  }, {
+    "iri" : "http://purl.org/vocab/aiiso/schema#Faculty",
+    "baseIri" : "http://purl.org/vocab/aiiso/schema",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Faculty",
+      "undefined" : "Faculty"
+    },
+    "comment" : { },
+    "attributes" : [ "external" ],
+    "id" : "76",
+    "superClasses" : [ "7" ]
+  }, {
+    "iri" : "http://purl.org/vocab/frbr/core#Work",
+    "baseIri" : "http://purl.org/vocab/frbr/core",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Work",
+      "undefined" : "Work"
+    },
+    "subClasses" : [ "18" ],
+    "comment" : {
+      "undefined" : "A distinct intellectual or artistic creation."
+    },
+    "attributes" : [ "external" ],
+    "id" : "39"
+  }, {
+    "iri" : "http://purl.org/vocab/aiiso/schema#KnowledgeGrouping",
+    "baseIri" : "http://purl.org/vocab/aiiso/schema",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "KnowledgeGrouping",
+      "undefined" : "Knowledge Grouping"
+    },
+    "comment" : {
+      "undefined" : "A KnowledgeGrouping represents a collection of resources, learning objectives, timetables, and other materials."
+    },
+    "attributes" : [ "external" ],
+    "id" : "98"
+  }, {
+    "iri" : "http://purl.org/he/syllabus/ontology#Accessibility",
+    "baseIri" : "http://purl.org/he/syllabus/ontology",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Accessibility",
+      "undefined" : "Accessibility"
+    },
+    "comment" : {
+      "undefined" : "Policy to meet the requirements for class adaptation for students with disabilities."
+    },
+    "id" : "87",
+    "superClasses" : [ "13" ]
+  }, {
+    "iri" : "http://purl.org/he/syllabus/ontology#LearningObjective",
+    "baseIri" : "http://purl.org/he/syllabus/ontology",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "LearningObjective",
+      "undefined" : "Learning objective"
+    },
+    "comment" : {
+      "undefined" : "Learning objectives are statements that define the expected goal of a curriculum, course, lesson or activity interms of demonstrable skills or knowledge that will be acquired by a student as a result of instruction."
+    },
+    "id" : "102",
+    "superClasses" : [ "9" ]
+  }, {
+    "iri" : "http://purl.org/dc/terms/BibliographicResource",
+    "baseIri" : "http://purl.org/dc/terms",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "BibliographicResource",
+      "undefined" : "Learning Resource"
+    },
+    "comment" : {
+      "undefined" : "A book, article, or other documentary resource."
+    },
+    "attributes" : [ "external" ],
+    "id" : "108"
+  }, {
+    "iri" : "http://purl.org/he/syllabus/ontology#Topic",
+    "baseIri" : "http://purl.org/he/syllabus/ontology",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Topic",
+      "undefined" : "Subject"
+    },
+    "comment" : {
+      "undefined" : "The topic or the subject of the course."
+    },
+    "id" : "29",
+    "superClasses" : [ "109" ]
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "112",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2004/02/skos/core#Concept",
+    "baseIri" : "http://www.w3.org/2004/02/skos/core",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Concept",
+      "undefined" : "Concept"
+    },
+    "subClasses" : [ "29" ],
+    "comment" : {
+      "undefined" : "A SKOS concept can be viewed as an idea or notion; a unit of thought."
+    },
+    "attributes" : [ "external" ],
+    "id" : "109"
+  }, {
+    "iri" : "http://xmlns.com/foaf/0.1/Agent",
+    "equivalent" : [ "64" ],
+    "baseIri" : "http://xmlns.com/foaf/0.1",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Agent",
+      "undefined" : "Agent"
+    },
+    "subClasses" : [ "7", "78", "113" ],
+    "comment" : {
+      "undefined" : "An agent (eg. person, group, software or physical artifact). "
+    },
+    "attributes" : [ "equivalent", "external" ],
+    "id" : "66"
+  }, {
+    "iri" : "http://purl.org/vocab/frbr/core#Manifestation",
+    "baseIri" : "http://purl.org/vocab/frbr/core",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Manifestation",
+      "undefined" : "Manifestation"
+    },
+    "comment" : {
+      "undefined" : "The physical embodiment of an expression of a work."
+    },
+    "attributes" : [ "external" ],
+    "id" : "89"
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "116",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "37",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://schema.org/Course",
+    "equivalent" : [ "32", "31", "33" ],
+    "baseIri" : "http://schema.org",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Course",
+      "undefined" : "Course"
+    },
+    "comment" : {
+      "undefined" : "A description of an educational course which may be offered as distinct instances at which take place at different times or take place at different locations, or be offered through different media or modes of study. An educational course is a sequence of one or more educational events and/or creative works which aims to build knowledge, competence or ability of learners."
+    },
+    "attributes" : [ "equivalent", "external" ],
+    "id" : "34"
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "117",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "119",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "instances" : 0,
+    "intersection" : [ "108", "69", "29", "31", "63", "41", "47" ],
+    "attributes" : [ "intersection", "anonymous" ],
+    "id" : "36"
+  }, {
+    "iri" : "http://xmlns.com/foaf/0.1/Organization",
+    "equivalent" : [ "7" ],
+    "baseIri" : "http://xmlns.com/foaf/0.1",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Organization",
+      "undefined" : "Organization"
+    },
+    "comment" : {
+      "undefined" : "The Organization class represents a kind of Agent corresponding to social instititutions such as companies, societies etc."
+    },
+    "attributes" : [ "equivalent", "external" ],
+    "id" : "78",
+    "superClasses" : [ "66" ]
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "44",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "92",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "120",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://vivoweb.org/ontology/core#AcademicDegree",
+    "baseIri" : "http://vivoweb.org/ontology/core",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "AcademicDegree",
+      "undefined" : "Academic Degree"
+    },
+    "comment" : {
+      "undefined" : "An academic degree at any level, both as reported by individuals for employment and as offered by academic degree programs."
+    },
+    "attributes" : [ "external" ],
+    "id" : "21"
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "73",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "30",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://purl.org/vocab/aiiso/schema#Department",
+    "baseIri" : "http://purl.org/vocab/aiiso/schema",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Department",
+      "undefined" : "Department"
+    },
+    "comment" : {
+      "undefined" : "A Department is a group of people recognised by an organization as forming a cohesive group referred to by the organization as a department."
+    },
+    "attributes" : [ "external" ],
+    "id" : "75",
+    "superClasses" : [ "7" ]
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "56",
+    "label" : {
+      "IRI-based" : "nonNegativeInteger"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#dateTime",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "122",
+    "label" : {
+      "IRI-based" : "dateTime"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "94",
+    "label" : {
+      "IRI-based" : "nonNegativeInteger"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "123",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "124",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "125",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "62",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "instances" : 0,
+    "intersection" : [ "127", "45", "23" ],
+    "attributes" : [ "intersection", "anonymous" ],
+    "id" : "11"
+  }, {
+    "iri" : "http://xmlns.com/foaf/0.1/Person",
+    "equivalent" : [ "65" ],
+    "baseIri" : "http://xmlns.com/foaf/0.1",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Person",
+      "undefined" : "Person"
+    },
+    "comment" : {
+      "undefined" : "A person."
+    },
+    "attributes" : [ "equivalent", "external" ],
+    "id" : "113",
+    "superClasses" : [ "66" ]
+  }, {
+    "instances" : 0,
+    "intersection" : [ "69", "0", "31", "1", "18", "63", "13", "47" ],
+    "attributes" : [ "intersection", "anonymous" ],
+    "id" : "15"
+  }, {
+    "instances" : 0,
+    "intersection" : [ "48", "109" ],
+    "attributes" : [ "intersection", "anonymous" ],
+    "id" : "105"
+  }, {
+    "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "id" : "54",
+    "label" : {
+      "IRI-based" : "Literal",
+      "undefined" : "Literal"
+    }
+  }, {
+    "iri" : "http://www.teste/ontologies/IEEE_RCD_Impl.owlCompetence",
+    "baseIri" : "http://www.teste/ontologies",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "IEEE_RCD_Impl.owlCompetence",
+      "undefined" : "Competence"
+    },
+    "comment" : {
+      "pt" : "Corresponde ao conceito \"Reusable Competency Definition\" da norma IEEE 1484.20.1"
+    },
+    "attributes" : [ "equivalent", "external" ],
+    "id" : "138"
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#dateTime",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "107",
+    "label" : {
+      "IRI-based" : "dateTime"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#dateTime",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "4",
+    "label" : {
+      "IRI-based" : "dateTime"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2002/07/owl#Thing",
+    "baseIri" : "http://owl2vowl.de",
+    "id" : "53",
+    "label" : {
+      "undefined" : "Thing"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "27",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "133",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "instances" : 0,
+    "intersection" : [ "18", "66" ],
+    "attributes" : [ "intersection", "anonymous" ],
+    "id" : "132"
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#dateTime",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "144",
+    "label" : {
+      "IRI-based" : "dateTime"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "baseIri" : "http://www.w3.org/2000/01/rdf-schema",
+    "id" : "145",
+    "label" : {
+      "IRI-based" : "Literal",
+      "undefined" : "Literal"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "140",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "82",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://purl.org/he/syllabus/ontology#GoalStatement",
+    "baseIri" : "http://purl.org/he/syllabus/ontology",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "GoalStatement",
+      "undefined" : "Goal Statement"
+    },
+    "subClasses" : [ "148", "8", "102" ],
+    "comment" : {
+      "undefined" : "The goal statement is one of the most important parts of the definition syllabus. With clearly and concisely stated goals, the rest of the planning process falls naturally into place."
+    },
+    "id" : "9"
+  }, {
+    "instances" : 0,
+    "intersection" : [ "46", "34", "64" ],
+    "attributes" : [ "intersection", "anonymous" ],
+    "id" : "26"
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "16",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "86",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "152",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "137",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "141",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "153",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "100",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "58",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://schema.org/EducationalOrganization",
+    "baseIri" : "http://schema.org",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "EducationalOrganization",
+      "undefined" : "Educational Organization"
+    },
+    "comment" : {
+      "undefined" : "An educational organization."
+    },
+    "attributes" : [ "external" ],
+    "id" : "77",
+    "superClasses" : [ "7" ]
+  }, {
+    "iri" : "http://schema.org/Person",
+    "equivalent" : [ "113" ],
+    "baseIri" : "http://schema.org",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Person",
+      "undefined" : "Person"
+    },
+    "subClasses" : [ "41" ],
+    "comment" : {
+      "undefined" : "A person (alive, dead, undead, of fictional)."
+    },
+    "attributes" : [ "equivalent", "external" ],
+    "id" : "65",
+    "superClasses" : [ "64" ]
+  }, {
+    "iri" : "http://purl.org/he/syllabus/ontology#Syllabus",
+    "baseIri" : "http://purl.org/he/syllabus/ontology",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Syllabus",
+      "undefined" : "Syllabus"
+    },
+    "comment" : {
+      "undefined" : "A syllabus is a document that outlines everything that will be covered in a course"
+    },
+    "id" : "18",
+    "superClasses" : [ "39" ]
+  }, {
+    "iri" : "http://vivoweb.org/ontology/core#AcademicYear",
+    "baseIri" : "http://vivoweb.org/ontology/core",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "AcademicYear",
+      "undefined" : "Academic Year"
+    },
+    "comment" : {
+      "undefined" : "An explicit individual period considered by an academic institution to be its primary academic cycle."
+    },
+    "attributes" : [ "external" ],
+    "id" : "84"
+  }, {
+    "iri" : "http://purl.org/he/syllabus/ontology#Instructor",
+    "equivalent" : [ "115" ],
+    "baseIri" : "http://purl.org/he/syllabus/ontology",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Instructor",
+      "undefined" : "Teacher"
+    },
+    "comment" : {
+      "undefined" : "A person assigned to instruct or provide instructional assistance for the CourseInstance."
+    },
+    "attributes" : [ "equivalent" ],
+    "id" : "41",
+    "superClasses" : [ "65" ]
+  }, {
+    "iri" : "http://schema.org/Audience",
+    "baseIri" : "http://schema.org",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Audience",
+      "undefined" : "Audience"
+    },
+    "comment" : {
+      "undefined" : "Intended audience for an item, i.e. the group for whom the item was created."
+    },
+    "attributes" : [ "external" ],
+    "id" : "161"
+  }, {
+    "iri" : "http://vivoweb.org/ontology/core#AcademicTerm",
+    "baseIri" : "http://vivoweb.org/ontology/core",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "AcademicTerm",
+      "undefined" : "Academic Term"
+    },
+    "comment" : {
+      "undefined" : "An explicit individual academic term, quarter, or semester rather than the generic fall, spring or summer semester."
+    },
+    "attributes" : [ "external" ],
+    "id" : "96"
+  }, {
+    "iri" : "http://www.fonte-project.net/ontologies/SICRA.owlTaxonomiaBloom",
+    "baseIri" : "http://www.fonte-project.net/ontologies",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "SICRA.owlTaxonomiaBloom",
+      "undefined" : "Bloom taxonomy"
+    },
+    "comment" : {
+      "undefined" : "Bloom’s Taxonomy is a classification of the different objectives and skills that educators set for their students (learning objectives)."
+    },
+    "attributes" : [ "external" ],
+    "id" : "111"
+  }, {
+    "iri" : "http://linkedscience.org/teach/ns#Teacher",
+    "baseIri" : "http://linkedscience.org/teach/ns",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Teacher",
+      "undefined" : "Teacher"
+    },
+    "comment" : {
+      "undefined" : "Teacher of the course."
+    },
+    "attributes" : [ "equivalent", "external" ],
+    "id" : "115"
+  }, {
+    "iri" : "http://purl.org/dc/terms/LinguisticSystem",
+    "baseIri" : "http://purl.org/dc/terms",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "LinguisticSystem",
+      "undefined" : "Language"
+    },
+    "comment" : {
+      "undefined" : "A system of signs, symbols, sounds, gestures, or rules used in communication."
+    },
+    "attributes" : [ "external" ],
+    "id" : "24"
+  }, {
+    "iri" : "http://purl.org/he/syllabus/ontology#Competence",
+    "equivalent" : [ "138" ],
+    "baseIri" : "http://purl.org/he/syllabus/ontology",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Competence",
+      "undefined" : "Competence"
+    },
+    "comment" : {
+      "undefined" : "A very specific statement that describes exactly what a student will be able to do in some measurable way. There may be more than one measurable outcome defined for a given competency."
+    },
+    "attributes" : [ "equivalent" ],
+    "id" : "148",
+    "superClasses" : [ "9" ]
+  }, {
+    "iri" : "http://purl.org/he/syllabus/ontology#Schedule",
+    "baseIri" : "http://purl.org/he/syllabus/ontology",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Schedule",
+      "undefined" : "Schedule"
+    },
+    "comment" : {
+      "undefined" : "Schedule of the class. It apply for tutoring, classes, laboratory, etc."
+    },
+    "id" : "127"
+  }, {
+    "instances" : 0,
+    "intersection" : [ "34", "113" ],
+    "attributes" : [ "intersection", "anonymous" ],
+    "id" : "20"
+  }, {
+    "instances" : 0,
+    "intersection" : [ "29", "18" ],
+    "attributes" : [ "intersection", "anonymous" ],
+    "id" : "68"
+  }, {
+    "instances" : 0,
+    "intersection" : [ "23", "41" ],
+    "attributes" : [ "intersection", "anonymous" ],
+    "id" : "188"
+  }, {
+    "iri" : "http://linkedscience.org/teach/ns#Course",
+    "equivalent" : [ "32", "31", "34" ],
+    "baseIri" : "http://linkedscience.org/teach/ns",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Course",
+      "undefined" : "Course"
+    },
+    "comment" : {
+      "undefined" : "Course is where students are supposed to learn something."
+    },
+    "attributes" : [ "equivalent", "external" ],
+    "id" : "33"
+  }, {
+    "iri" : "http://linkedscience.org/teach/ns#Assignment",
+    "baseIri" : "http://linkedscience.org/teach/ns",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Assignment",
+      "undefined" : "Assignment"
+    },
+    "comment" : {
+      "undefined" : "Assignment of a course, for example an exercise."
+    },
+    "attributes" : [ "external" ],
+    "id" : "69"
+  }, {
+    "iri" : "http://purl.org/he/syllabus/ontology#Classroom",
+    "baseIri" : "http://purl.org/he/syllabus/ontology",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Classroom",
+      "undefined" : "Classroom"
+    },
+    "comment" : {
+      "undefined" : "A room in an educational intitution where groups of students are taught"
+    },
+    "id" : "47",
+    "superClasses" : [ "46" ]
+  } ],
+  "property" : [ {
+    "id" : "2",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "6",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "10",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "14",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "17",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "19",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "22",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "25",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "28",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "35",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "38",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "40",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "43",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "50",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "52",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "55",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "57",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "61",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "67",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "70",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "72",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "80",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "81",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "83",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "85",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "88",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "90",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "91",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "93",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "95",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "97",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "99",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "103",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "104",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "106",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "110",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "114",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "118",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "121",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "126",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "128",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "129",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "130",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "131",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "134",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "135",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "136",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "139",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "101",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "142",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "143",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "146",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "147",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "149",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "150",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "151",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "154",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "155",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "156",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "157",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "158",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "159",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "160",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "162",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "163",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "164",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "165",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "166",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "167",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "168",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "170",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "171",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "172",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "173",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "174",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "175",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "176",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "177",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "178",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "169",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "179",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "180",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "181",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "182",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "183",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "184",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "185",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "186",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "187",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "189",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "190",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "191",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "192",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "193",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "194",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "195",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "196",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "42",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "197",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "198",
+    "type" : "owl:objectProperty"
+  } ],
+  "propertyAttribute" : [ {
+    "iri" : "http://www.ontologydesignpatterns.org/cp/owl/timeinterval.owl#hasIntervalEndDate",
+    "baseIri" : "http://www.ontologydesignpatterns.org/cp/owl/timeinterval.owl",
+    "range" : "4",
+    "label" : {
+      "IRI-based" : "hasIntervalEndDate",
+      "undefined" : "end date"
+    },
+    "domain" : "3",
+    "comment" : {
+      "undefined" : "The end date of a time interval."
+    },
+    "attributes" : [ "datatype", "external" ],
+    "id" : "2"
+  }, {
+    "iri" : "http://purl.org/vocab/aiiso/schema#part_of",
+    "baseIri" : "http://purl.org/vocab/aiiso/schema",
+    "range" : "7",
+    "label" : {
+      "IRI-based" : "part_of",
+      "undefined" : "part of"
+    },
+    "domain" : "7",
+    "comment" : {
+      "undefined" : "A foaf Organization may refer to its parent Organizations using part_of."
+    },
+    "attributes" : [ "external", "object" ],
+    "id" : "6"
+  }, {
+    "iri" : "http://www.essepuntato.it/2012/04/tvc/atTime",
+    "baseIri" : "http://www.essepuntato.it/2012/04/tvc",
+    "range" : "3",
+    "label" : {
+      "IRI-based" : "atTime",
+      "undefined" : "at Time"
+    },
+    "domain" : "11",
+    "comment" : {
+      "undefined" : "time of the event"
+    },
+    "attributes" : [ "external", "object" ],
+    "id" : "10"
+  }, {
+    "iri" : "http://schema.org/description",
+    "baseIri" : "http://schema.org",
+    "range" : "16",
+    "label" : {
+      "IRI-based" : "description",
+      "undefined" : "description"
+    },
+    "domain" : "15",
+    "comment" : {
+      "undefined" : "A description of the item."
+    },
+    "attributes" : [ "datatype", "external" ],
+    "id" : "14"
+  }, {
+    "iri" : "http://purl.org/he/syllabus/ontology#help",
+    "baseIri" : "http://purl.org/he/syllabus/ontology",
+    "range" : "1",
+    "label" : {
+      "IRI-based" : "help",
+      "undefined" : "help"
+    },
+    "domain" : "18",
+    "comment" : {
+      "undefined" : "Information or advice given to reach success in a course"
+    },
+    "attributes" : [ "object" ],
+    "id" : "17"
+  }, {
+    "iri" : "http://purl.org/he/syllabus/ontology#academicDegree",
+    "baseIri" : "http://purl.org/he/syllabus/ontology",
+    "range" : "21",
+    "label" : {
+      "IRI-based" : "academicDegree",
+      "undefined" : "academic degree"
+    },
+    "domain" : "20",
+    "comment" : {
+      "undefined" : "An academic degree at any level, both as reported by individuals for employment and as offered by academic degree programs."
+    },
+    "attributes" : [ "object" ],
+    "id" : "19"
+  }, {
+    "iri" : "http://purl.org/dc/terms/language",
+    "baseIri" : "http://purl.org/dc/terms",
+    "range" : "24",
+    "label" : {
+      "IRI-based" : "language",
+      "undefined" : "language"
+    },
+    "domain" : "23",
+    "comment" : {
+      "undefined" : "A language of the resource."
+    },
+    "attributes" : [ "external", "object" ],
+    "id" : "22"
+  }, {
+    "iri" : "http://xmlns.com/foaf/0.1/name",
+    "baseIri" : "http://xmlns.com/foaf/0.1",
+    "range" : "27",
+    "label" : {
+      "IRI-based" : "name",
+      "undefined" : "name"
+    },
+    "domain" : "26",
+    "comment" : {
+      "undefined" : "The name of something is a simple textual string."
+    },
+    "attributes" : [ "datatype", "external" ],
+    "id" : "25"
+  }, {
+    "iri" : "http://purl.org/he/syllabus/ontology#order",
+    "baseIri" : "http://purl.org/he/syllabus/ontology",
+    "range" : "30",
+    "label" : {
+      "IRI-based" : "order",
+      "undefined" : "order"
+    },
+    "domain" : "29",
+    "comment" : {
+      "undefined" : "The sequence in which the study topics are arranged."
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "28"
+  }, {
+    "iri" : "http://purl.org/he/syllabus/ontology#type",
+    "baseIri" : "http://purl.org/he/syllabus/ontology",
+    "range" : "37",
+    "label" : {
+      "IRI-based" : "type",
+      "undefined" : "type"
+    },
+    "domain" : "36",
+    "comment" : {
+      "undefined" : "Category or type of something."
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "35"
+  }, {
+    "iri" : "http://purl.org/vocab/frbr/core#realization",
+    "baseIri" : "http://purl.org/vocab/frbr/core",
+    "range" : "5",
+    "label" : {
+      "IRI-based" : "realization",
+      "undefined" : "realization"
+    },
+    "domain" : "39",
+    "comment" : {
+      "undefined" : "A work realized through an expression"
+    },
+    "attributes" : [ "external", "object" ],
+    "id" : "38"
+  }, {
+    "iri" : "http://schema.org/creator",
+    "equivalent" : [ "42" ],
+    "baseIri" : "http://schema.org",
+    "range" : "18",
+    "label" : {
+      "IRI-based" : "creator",
+      "undefined" : "creator"
+    },
+    "domain" : "41",
+    "comment" : {
+      "undefined" : "The creator/author of this CreativeWork. This is the same as the Author property for CreativeWork."
+    },
+    "attributes" : [ "external", "object" ],
+    "id" : "40"
+  }, {
+    "iri" : "http://purl.org/he/syllabus/ontology#studyStrategy",
+    "baseIri" : "http://purl.org/he/syllabus/ontology",
+    "range" : "44",
+    "label" : {
+      "IRI-based" : "studyStrategy",
+      "undefined" : "study strategy"
+    },
+    "domain" : "0",
+    "comment" : {
+      "undefined" : "Study tips or strategies to improve your studies."
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "43"
+  }, {
+    "iri" : "http://purl.org/he/syllabus/ontology#workload",
+    "baseIri" : "http://purl.org/he/syllabus/ontology",
+    "range" : "51",
+    "label" : {
+      "IRI-based" : "workload",
+      "undefined" : "workload"
+    },
+    "domain" : "18",
+    "comment" : {
+      "undefined" : "The amount of work or of working time expected or assigned to do an activity."
+    },
+    "attributes" : [ "object" ],
+    "id" : "50"
+  }, {
+    "iri" : "http://www.w3.org/2002/07/owl#topDataProperty",
+    "baseIri" : "http://www.w3.org/2002/07/owl",
+    "range" : "54",
+    "label" : {
+      "IRI-based" : "topDataProperty"
+    },
+    "domain" : "53",
+    "attributes" : [ "datatype", "external" ],
+    "id" : "52"
+  }, {
+    "iri" : "http://purl.org/he/syllabus/ontology#durationPerTerm",
+    "baseIri" : "http://purl.org/he/syllabus/ontology",
+    "range" : "56",
+    "label" : {
+      "IRI-based" : "durationPerTerm",
+      "undefined" : "duration per term"
+    },
+    "domain" : "51",
+    "comment" : {
+      "undefined" : "duration of workload per term"
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "55"
+  }, {
+    "iri" : "http://schema.org/address",
+    "baseIri" : "http://schema.org",
+    "range" : "58",
+    "label" : {
+      "IRI-based" : "address",
+      "undefined" : "address"
+    },
+    "domain" : "46",
+    "comment" : {
+      "undefined" : "Physical address of the item."
+    },
+    "attributes" : [ "datatype", "external" ],
+    "id" : "57"
+  }, {
+    "iri" : "http://purl.org/dc/terms/title",
+    "baseIri" : "http://purl.org/dc/terms",
+    "range" : "62",
+    "label" : {
+      "IRI-based" : "title",
+      "undefined" : "title"
+    },
+    "domain" : "18",
+    "comment" : {
+      "undefined" : "A name given to the resource."
+    },
+    "attributes" : [ "datatype", "external" ],
+    "id" : "61"
+  }, {
+    "iri" : "http://purl.org/he/syllabus/ontology#assignment",
+    "baseIri" : "http://purl.org/he/syllabus/ontology",
+    "range" : "69",
+    "label" : {
+      "IRI-based" : "assignment",
+      "undefined" : "assignment"
+    },
+    "domain" : "68",
+    "comment" : {
+      "undefined" : "A piece of work given to someone, typically as part of their studies."
+    },
+    "attributes" : [ "object" ],
+    "id" : "67"
+  }, {
+    "iri" : "http://purl.org/he/syllabus/ontology#methodology",
+    "baseIri" : "http://purl.org/he/syllabus/ontology",
+    "range" : "0",
+    "label" : {
+      "IRI-based" : "methodology",
+      "undefined" : "methodology"
+    },
+    "domain" : "18",
+    "comment" : {
+      "undefined" : "A system of ways of doing, teaching, or studying something."
+    },
+    "attributes" : [ "object" ],
+    "id" : "70"
+  }, {
+    "iri" : "http://purl.org/he/syllabus/ontology#requirement",
+    "baseIri" : "http://purl.org/he/syllabus/ontology",
+    "range" : "73",
+    "label" : {
+      "IRI-based" : "requirement",
+      "undefined" : "requirement"
+    },
+    "domain" : "18",
+    "comment" : {
+      "undefined" : "Requirements for taking the Course. May be completion of another Course or a textual description like \"permission of instructor\". Requirements may be a pre-requisite competency, referenced using AlignmentObject."
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "72"
+  }, {
+    "iri" : "http://purl.org/he/syllabus/ontology#classroom",
+    "baseIri" : "http://purl.org/he/syllabus/ontology",
+    "range" : "47",
+    "label" : {
+      "IRI-based" : "classroom",
+      "undefined" : "classroom"
+    },
+    "domain" : "23",
+    "comment" : {
+      "undefined" : "A room in an educational intitution where groups of students are taught."
+    },
+    "attributes" : [ "object" ],
+    "id" : "80"
+  }, {
+    "iri" : "http://schema.org/name",
+    "baseIri" : "http://schema.org",
+    "range" : "82",
+    "label" : {
+      "IRI-based" : "name",
+      "undefined" : "name"
+    },
+    "domain" : "26",
+    "comment" : {
+      "undefined" : "The name of the item."
+    },
+    "attributes" : [ "datatype", "external" ],
+    "id" : "81"
+  }, {
+    "iri" : "http://purl.org/he/syllabus/ontology#academicYear",
+    "baseIri" : "http://purl.org/he/syllabus/ontology",
+    "range" : "84",
+    "label" : {
+      "IRI-based" : "academicYear",
+      "undefined" : "academic year"
+    },
+    "domain" : "23",
+    "comment" : {
+      "undefined" : "An explicit individual period considered by an academic institution to be its primary academic cycle."
+    },
+    "attributes" : [ "object" ],
+    "id" : "83"
+  }, {
+    "iri" : "http://schema.org/courseMode",
+    "baseIri" : "http://schema.org",
+    "range" : "86",
+    "label" : {
+      "IRI-based" : "courseMode",
+      "undefined" : "course mode"
+    },
+    "domain" : "23",
+    "comment" : {
+      "undefined" : "The medium or means of delivery of the course instance or the mode of study, either as a text label (e.g. \"online\", \"onsite\" or \"blended\"; \"synchronous\" or \"asynchronous\"; \"full-time\" or \"part-time\") or as a URL reference to a term from a controlled vocabulary."
+    },
+    "attributes" : [ "datatype", "external" ],
+    "id" : "85"
+  }, {
+    "iri" : "http://purl.org/spar/fabio/hasManifestation",
+    "baseIri" : "http://purl.org/spar/fabio",
+    "range" : "89",
+    "label" : {
+      "IRI-based" : "hasManifestation",
+      "undefined" : "has manifestation"
+    },
+    "domain" : "39",
+    "comment" : {
+      "undefined" : "A property linking a particular work to its manifestations"
+    },
+    "attributes" : [ "external", "object" ],
+    "id" : "88"
+  }, {
+    "iri" : "http://purl.org/dc/terms/tableOfContents",
+    "baseIri" : "http://purl.org/dc/terms",
+    "range" : "49",
+    "label" : {
+      "IRI-based" : "tableOfContents",
+      "undefined" : "table of contents"
+    },
+    "domain" : "18",
+    "comment" : {
+      "undefined" : "A list of subunits of the resource."
+    },
+    "attributes" : [ "external", "object" ],
+    "id" : "90"
+  }, {
+    "iri" : "http://purl.org/he/syllabus/ontology#office",
+    "baseIri" : "http://purl.org/he/syllabus/ontology",
+    "range" : "92",
+    "label" : {
+      "IRI-based" : "office",
+      "undefined" : "office"
+    },
+    "domain" : "41",
+    "comment" : {
+      "undefined" : "Office of the teacher"
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "91"
+  }, {
+    "iri" : "http://purl.org/he/syllabus/ontology#durationPerWeek",
+    "baseIri" : "http://purl.org/he/syllabus/ontology",
+    "range" : "94",
+    "label" : {
+      "IRI-based" : "durationPerWeek",
+      "undefined" : "duration per week"
+    },
+    "domain" : "51",
+    "comment" : {
+      "undefined" : "duration of workload per week"
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "93"
+  }, {
+    "iri" : "http://purl.org/he/syllabus/ontology#academicTerm",
+    "baseIri" : "http://purl.org/he/syllabus/ontology",
+    "range" : "96",
+    "label" : {
+      "IRI-based" : "academicTerm",
+      "undefined" : "academic term"
+    },
+    "domain" : "23",
+    "comment" : {
+      "undefined" : "An explicit individual academic term, quarter, or semester rather than the generic fall, spring or summer semester."
+    },
+    "attributes" : [ "object" ],
+    "id" : "95"
+  }, {
+    "iri" : "http://purl.org/he/syllabus/ontology#approve",
+    "baseIri" : "http://purl.org/he/syllabus/ontology",
+    "range" : "18",
+    "label" : {
+      "IRI-based" : "approve",
+      "undefined" : "approved"
+    },
+    "domain" : "60",
+    "comment" : {
+      "undefined" : "Entity who approves the syllabus."
+    },
+    "attributes" : [ "object" ],
+    "id" : "97"
+  }, {
+    "iri" : "http://schema.org/courseCode",
+    "equivalent" : [ "101" ],
+    "baseIri" : "http://schema.org",
+    "range" : "100",
+    "label" : {
+      "IRI-based" : "courseCode",
+      "undefined" : "code"
+    },
+    "domain" : "34",
+    "comment" : {
+      "undefined" : "The identifier for the Course used by the course provider."
+    },
+    "attributes" : [ "datatype", "external" ],
+    "id" : "99"
+  }, {
+    "iri" : "http://purl.org/vocab/frbr/core#embodiment",
+    "baseIri" : "http://purl.org/vocab/frbr/core",
+    "range" : "89",
+    "label" : {
+      "IRI-based" : "embodiment",
+      "undefined" : "embodiment"
+    },
+    "domain" : "5",
+    "comment" : {
+      "undefined" : "An expression embodied in a manifestation."
+    },
+    "attributes" : [ "external", "object" ],
+    "id" : "103"
+  }, {
+    "iri" : "http://www.w3.org/2004/02/skos/core#member",
+    "baseIri" : "http://www.w3.org/2004/02/skos/core",
+    "range" : "105",
+    "label" : {
+      "IRI-based" : "member",
+      "undefined" : "has member"
+    },
+    "domain" : "48",
+    "comment" : {
+      "undefined" : "Collection has member"
+    },
+    "attributes" : [ "external", "object" ],
+    "id" : "104"
+  }, {
+    "iri" : "http://www.ontologydesignpatterns.org/cp/owl/timeinterval.owl#hasIntervalStartDate",
+    "baseIri" : "http://www.ontologydesignpatterns.org/cp/owl/timeinterval.owl",
+    "range" : "107",
+    "label" : {
+      "IRI-based" : "hasIntervalStartDate",
+      "undefined" : "start date"
+    },
+    "domain" : "3",
+    "comment" : {
+      "undefined" : "The start date of a time interval."
+    },
+    "attributes" : [ "datatype", "external" ],
+    "id" : "106"
+  }, {
+    "iri" : "http://purl.org/he/syllabus/ontology#taxon",
+    "baseIri" : "http://purl.org/he/syllabus/ontology",
+    "range" : "111",
+    "label" : {
+      "IRI-based" : "taxon",
+      "undefined" : "Bloom taxonomy"
+    },
+    "domain" : "9",
+    "comment" : {
+      "undefined" : "Bloom’s Taxonomy is a classification of the different objectives and skills that educators set for their students (learning objectives)."
+    },
+    "attributes" : [ "object" ],
+    "id" : "110"
+  }, {
+    "iri" : "http://linkedscience.org/teach/ns#teacher",
+    "baseIri" : "http://linkedscience.org/teach/ns",
+    "range" : "115",
+    "label" : {
+      "IRI-based" : "teacher",
+      "undefined" : "teacher"
+    },
+    "domain" : "33",
+    "comment" : {
+      "undefined" : "Teacher is an abstract property to relate a teacher to a course/seminar."
+    },
+    "attributes" : [ "external", "object" ],
+    "id" : "114"
+  }, {
+    "iri" : "http://purl.org/he/syllabus/ontology#awardedBy",
+    "baseIri" : "http://purl.org/he/syllabus/ontology",
+    "range" : "77",
+    "label" : {
+      "IRI-based" : "awardedBy",
+      "undefined" : "awared"
+    },
+    "domain" : "21",
+    "comment" : {
+      "undefined" : "Academic degree awared by an educational institution."
+    },
+    "attributes" : [ "object" ],
+    "id" : "118"
+  }, {
+    "iri" : "http://purl.org/he/syllabus/ontology#unitPerTerm",
+    "baseIri" : "http://purl.org/he/syllabus/ontology",
+    "range" : "116",
+    "label" : {
+      "IRI-based" : "unitPerTerm",
+      "undefined" : "unit per term"
+    },
+    "domain" : "51",
+    "comment" : {
+      "undefined" : "unit to measure workload by term"
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "121"
+  }, {
+    "iri" : "http://schema.org/instructor",
+    "baseIri" : "http://schema.org",
+    "range" : "41",
+    "label" : {
+      "IRI-based" : "instructor",
+      "undefined" : "instructor"
+    },
+    "domain" : "23",
+    "comment" : {
+      "undefined" : "A person assigned to instruct or provide instructional assistance for the CourseInstance."
+    },
+    "attributes" : [ "external", "object" ],
+    "id" : "126"
+  }, {
+    "iri" : "http://purl.org/he/syllabus/ontology#deadline",
+    "baseIri" : "http://purl.org/he/syllabus/ontology",
+    "range" : "122",
+    "label" : {
+      "IRI-based" : "deadline",
+      "undefined" : "deadline"
+    },
+    "domain" : "15",
+    "comment" : {
+      "undefined" : "Date the content expires and is no longer useful or available."
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "128"
+  }, {
+    "range" : "66",
+    "domain" : "7",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "129"
+  }, {
+    "range" : "109",
+    "domain" : "29",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "130"
+  }, {
+    "iri" : "http://schema.org/url",
+    "baseIri" : "http://schema.org",
+    "range" : "133",
+    "label" : {
+      "IRI-based" : "url",
+      "undefined" : "url"
+    },
+    "domain" : "132",
+    "comment" : {
+      "undefined" : "URL of the resource"
+    },
+    "attributes" : [ "datatype", "external" ],
+    "id" : "131"
+  }, {
+    "iri" : "http://schema.org/hasCourseInstance",
+    "baseIri" : "http://schema.org",
+    "range" : "23",
+    "label" : {
+      "IRI-based" : "hasCourseInstance",
+      "undefined" : "course instance"
+    },
+    "domain" : "34",
+    "comment" : {
+      "undefined" : "An offering of the course at a specific time and place or through specific media or mode of study or to a specific section of students."
+    },
+    "attributes" : [ "external", "object" ],
+    "id" : "134"
+  }, {
+    "iri" : "http://linkedscience.org/teach/ns#studyProgram",
+    "baseIri" : "http://linkedscience.org/teach/ns",
+    "range" : "18",
+    "label" : {
+      "IRI-based" : "studyProgram",
+      "undefined" : "syllabus"
+    },
+    "domain" : "34",
+    "comment" : {
+      "undefined" : "Describes the study program which is associated with the course/seminar."
+    },
+    "attributes" : [ "external", "object" ],
+    "id" : "135"
+  }, {
+    "iri" : "http://schema.org/email",
+    "baseIri" : "http://schema.org",
+    "range" : "137",
+    "label" : {
+      "IRI-based" : "email",
+      "undefined" : "email"
+    },
+    "domain" : "64",
+    "comment" : {
+      "undefined" : "Email address."
+    },
+    "attributes" : [ "datatype", "external" ],
+    "id" : "136"
+  }, {
+    "iri" : "http://schema.org/telephone",
+    "baseIri" : "http://schema.org",
+    "range" : "140",
+    "label" : {
+      "IRI-based" : "telephone",
+      "undefined" : "telephone"
+    },
+    "domain" : "64",
+    "comment" : {
+      "undefined" : "The telephone number."
+    },
+    "attributes" : [ "datatype", "external" ],
+    "id" : "139"
+  }, {
+    "iri" : "http://purl.org/vocab/aiiso/schema#code",
+    "equivalent" : [ "99" ],
+    "baseIri" : "http://purl.org/vocab/aiiso/schema",
+    "range" : "141",
+    "label" : {
+      "IRI-based" : "code",
+      "undefined" : "code"
+    },
+    "domain" : "34",
+    "comment" : {
+      "undefined" : "A person assigned to instruct or provide instructional assistance for the CourseInstance."
+    },
+    "attributes" : [ "datatype", "external" ],
+    "id" : "101"
+  }, {
+    "iri" : "http://purl.org/he/syllabus/ontology#resume",
+    "baseIri" : "http://purl.org/he/syllabus/ontology",
+    "range" : "119",
+    "label" : {
+      "IRI-based" : "resume",
+      "undefined" : "resume"
+    },
+    "domain" : "41",
+    "comment" : {
+      "undefined" : "Short written description of the teacher experience."
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "142"
+  }, {
+    "iri" : "http://purl.org/he/syllabus/ontology#bibliographicCitation",
+    "baseIri" : "http://purl.org/he/syllabus/ontology",
+    "range" : "125",
+    "label" : {
+      "IRI-based" : "bibliographicCitation",
+      "undefined" : "bibliographic citation"
+    },
+    "domain" : "108",
+    "comment" : {
+      "undefined" : "A bibliographic reference for the resource."
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "143"
+  }, {
+    "iri" : "http://www.ontologydesignpatterns.org/cp/owl/timeinterval.owl#hasIntervalDate",
+    "baseIri" : "http://www.ontologydesignpatterns.org/cp/owl/timeinterval.owl",
+    "range" : "144",
+    "label" : {
+      "IRI-based" : "hasIntervalDate",
+      "undefined" : "has interval date"
+    },
+    "domain" : "3",
+    "comment" : {
+      "undefined" : "A datatype property that encodes values from xsd:date for a time interval; a same time interval can have more than one xsd:date value: begin date, end date, date at which the interval holds, as well as dates expressed in different formats: xsd:gYear, xsd:dateTime, etc."
+    },
+    "attributes" : [ "datatype", "external" ],
+    "id" : "146"
+  }, {
+    "iri" : "http://vivoweb.org/ontology/core#courseCredits",
+    "baseIri" : "http://vivoweb.org/ontology/core",
+    "range" : "145",
+    "label" : {
+      "IRI-based" : "courseCredits",
+      "undefined" : "course credits"
+    },
+    "domain" : "34",
+    "comment" : {
+      "undefined" : "Number of credits assigned a course by an learning institution."
+    },
+    "attributes" : [ "datatype", "external" ],
+    "id" : "147"
+  }, {
+    "iri" : "http://purl.org/he/syllabus/ontology#learningResource",
+    "baseIri" : "http://purl.org/he/syllabus/ontology",
+    "range" : "108",
+    "label" : {
+      "IRI-based" : "learningResource",
+      "undefined" : "learning resources"
+    },
+    "domain" : "18",
+    "comment" : {
+      "undefined" : "List of resources of the course."
+    },
+    "attributes" : [ "object" ],
+    "id" : "149"
+  }, {
+    "iri" : "http://purl.org/dc/terms/hasVersion",
+    "baseIri" : "http://purl.org/dc/terms",
+    "range" : "123",
+    "label" : {
+      "IRI-based" : "hasVersion",
+      "undefined" : "version"
+    },
+    "domain" : "18",
+    "comment" : {
+      "undefined" : " A related resource that is a version, edition, or adaptation of the described resource."
+    },
+    "attributes" : [ "datatype", "external" ],
+    "id" : "150"
+  }, {
+    "iri" : "http://purl.org/he/syllabus/ontology#policy",
+    "baseIri" : "http://purl.org/he/syllabus/ontology",
+    "range" : "13",
+    "label" : {
+      "IRI-based" : "policy",
+      "undefined" : "policy"
+    },
+    "domain" : "18",
+    "comment" : {
+      "undefined" : "Education policy are the principles and government policy-making in the educational sphere."
+    },
+    "attributes" : [ "object" ],
+    "id" : "151"
+  }, {
+    "range" : "39",
+    "domain" : "18",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "154"
+  }, {
+    "range" : "13",
+    "domain" : "79",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "155"
+  }, {
+    "range" : "13",
+    "domain" : "71",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "156"
+  }, {
+    "iri" : "http://schema.org/identifier",
+    "baseIri" : "http://schema.org",
+    "range" : "152",
+    "label" : {
+      "IRI-based" : "identifier",
+      "undefined" : "identifier"
+    },
+    "domain" : "36",
+    "comment" : {
+      "undefined" : "The number o identifier of a class or activity."
+    },
+    "attributes" : [ "datatype", "external" ],
+    "id" : "157"
+  }, {
+    "range" : "13",
+    "domain" : "87",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "158"
+  }, {
+    "iri" : "http://purl.org/he/syllabus/ontology#unitPerWeek",
+    "baseIri" : "http://purl.org/he/syllabus/ontology",
+    "range" : "112",
+    "label" : {
+      "IRI-based" : "unitPerWeek",
+      "undefined" : "unit per week"
+    },
+    "domain" : "51",
+    "comment" : {
+      "undefined" : "unit to measure workload by week"
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "159"
+  }, {
+    "range" : "13",
+    "domain" : "12",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "160"
+  }, {
+    "range" : "7",
+    "domain" : "76",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "162"
+  }, {
+    "iri" : "http://purl.org/spar/pro/holdsRoleInTime",
+    "baseIri" : "http://purl.org/spar/pro",
+    "range" : "45",
+    "label" : {
+      "IRI-based" : "holdsRoleInTime",
+      "undefined" : "holds role in time"
+    },
+    "domain" : "66",
+    "comment" : {
+      "undefined" : "A property relating an agent to a role that the agent holds."
+    },
+    "attributes" : [ "external", "object" ],
+    "id" : "163"
+  }, {
+    "range" : "7",
+    "domain" : "75",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "164"
+  }, {
+    "range" : "7",
+    "domain" : "77",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "165"
+  }, {
+    "range" : "7",
+    "domain" : "74",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "166"
+  }, {
+    "range" : "65",
+    "domain" : "41",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "167"
+  }, {
+    "iri" : "http://schema.org/coursePrerequisites",
+    "equivalent" : [ "169" ],
+    "baseIri" : "http://schema.org",
+    "range" : "34",
+    "label" : {
+      "IRI-based" : "coursePrerequisites",
+      "undefined" : "prerequisite"
+    },
+    "domain" : "34",
+    "comment" : {
+      "undefined" : "Requirements for taking the Course."
+    },
+    "attributes" : [ "external", "object" ],
+    "id" : "168"
+  }, {
+    "range" : "59",
+    "domain" : "60",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "170"
+  }, {
+    "range" : "64",
+    "domain" : "65",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "171"
+  }, {
+    "range" : "64",
+    "domain" : "7",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "172"
+  }, {
+    "iri" : "http://www.w3.org/2004/02/skos/core#broader",
+    "baseIri" : "http://www.w3.org/2004/02/skos/core",
+    "range" : "109",
+    "label" : {
+      "IRI-based" : "broader",
+      "undefined" : "broader"
+    },
+    "domain" : "109",
+    "comment" : {
+      "undefined" : "has skos broader"
+    },
+    "attributes" : [ "external", "object" ],
+    "id" : "173"
+  }, {
+    "iri" : "http://purl.org/he/syllabus/ontology#weight",
+    "baseIri" : "http://purl.org/he/syllabus/ontology",
+    "range" : "153",
+    "label" : {
+      "IRI-based" : "weight",
+      "undefined" : "weight"
+    },
+    "domain" : "36",
+    "comment" : {
+      "undefined" : "weight of the assignment"
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "174"
+  }, {
+    "range" : "9",
+    "domain" : "8",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "175"
+  }, {
+    "range" : "9",
+    "domain" : "148",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "176"
+  }, {
+    "iri" : "http://purl.org/dc/terms/description",
+    "baseIri" : "http://purl.org/dc/terms",
+    "range" : "124",
+    "label" : {
+      "IRI-based" : "description",
+      "undefined" : "description"
+    },
+    "domain" : "15",
+    "comment" : {
+      "undefined" : "An account of the resource."
+    },
+    "attributes" : [ "datatype", "external" ],
+    "id" : "177"
+  }, {
+    "range" : "9",
+    "domain" : "102",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "178"
+  }, {
+    "iri" : "http://vivoweb.org/ontology/core#hasPrerequisite",
+    "equivalent" : [ "168" ],
+    "baseIri" : "http://vivoweb.org/ontology/core",
+    "range" : "31",
+    "label" : {
+      "IRI-based" : "hasPrerequisite",
+      "undefined" : "prerequisite"
+    },
+    "domain" : "31",
+    "comment" : {
+      "undefined" : "The prerequisites for taking the course."
+    },
+    "attributes" : [ "external", "object" ],
+    "id" : "169"
+  }, {
+    "range" : "66",
+    "domain" : "113",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "179"
+  }, {
+    "range" : "66",
+    "domain" : "78",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "180"
+  }, {
+    "range" : "48",
+    "domain" : "49",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "181"
+  }, {
+    "range" : "46",
+    "domain" : "47",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "182"
+  }, {
+    "range" : "79",
+    "domain" : "87",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "183"
+  }, {
+    "range" : "71",
+    "domain" : "12",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "184"
+  }, {
+    "range" : "79",
+    "domain" : "12",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "185"
+  }, {
+    "range" : "79",
+    "domain" : "71",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "186"
+  }, {
+    "range" : "113",
+    "domain" : "7",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "187"
+  }, {
+    "range" : "12",
+    "domain" : "87",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "189"
+  }, {
+    "range" : "71",
+    "domain" : "87",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "190"
+  }, {
+    "iri" : "http://purl.org/he/syllabus/ontology#goal",
+    "baseIri" : "http://purl.org/he/syllabus/ontology",
+    "range" : "9",
+    "label" : {
+      "IRI-based" : "goal",
+      "undefined" : "goal"
+    },
+    "domain" : "18",
+    "comment" : {
+      "undefined" : "The goal statement is one of the most important parts of the definition syllabus. With clearly and concisely stated goals, the rest of the planning process falls naturally into place."
+    },
+    "attributes" : [ "object" ],
+    "id" : "191"
+  }, {
+    "iri" : "http://schema.org/audience",
+    "baseIri" : "http://schema.org",
+    "range" : "161",
+    "label" : {
+      "IRI-based" : "audience",
+      "undefined" : "audience"
+    },
+    "domain" : "34",
+    "comment" : {
+      "undefined" : "Intended audience for an item, i.e. the group for whom the item was created."
+    },
+    "attributes" : [ "external", "object" ],
+    "id" : "192"
+  }, {
+    "iri" : "http://xmlns.com/foaf/0.1/member",
+    "baseIri" : "http://xmlns.com/foaf/0.1",
+    "range" : "7",
+    "label" : {
+      "IRI-based" : "member",
+      "undefined" : "member of a group"
+    },
+    "domain" : "65",
+    "comment" : {
+      "undefined" : "Indicates a member of a Group."
+    },
+    "attributes" : [ "external", "object" ],
+    "id" : "193"
+  }, {
+    "iri" : "http://purl.org/spar/pro/withRole",
+    "baseIri" : "http://purl.org/spar/pro",
+    "range" : "59",
+    "label" : {
+      "IRI-based" : "withRole",
+      "undefined" : "with role"
+    },
+    "domain" : "45",
+    "comment" : {
+      "undefined" : "An object property connecting an agent's role in time to a definition of the type of role held by this agent, specified as an instance of the class pro:Role or of one of its sub-classes."
+    },
+    "attributes" : [ "external", "object" ],
+    "id" : "194"
+  }, {
+    "iri" : "http://purl.org/he/syllabus/ontology#educationLevel",
+    "baseIri" : "http://purl.org/he/syllabus/ontology",
+    "range" : "120",
+    "label" : {
+      "IRI-based" : "educationLevel",
+      "undefined" : "education level"
+    },
+    "domain" : "21",
+    "comment" : {
+      "undefined" : "A class of entity, defined in terms of progression through an educational or training context, for which the described resource is intended"
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "195"
+  }, {
+    "iri" : "http://purl.org/he/syllabus/ontology#hasSchedule",
+    "baseIri" : "http://purl.org/he/syllabus/ontology",
+    "range" : "127",
+    "label" : {
+      "IRI-based" : "hasSchedule",
+      "undefined" : "schedule"
+    },
+    "domain" : "188",
+    "comment" : {
+      "undefined" : "Schedule of the class, laboratory, tutoring, etc."
+    },
+    "attributes" : [ "object" ],
+    "id" : "196"
+  }, {
+    "iri" : "http://purl.org/dc/terms/creator",
+    "equivalent" : [ "40" ],
+    "baseIri" : "http://purl.org/dc/terms",
+    "range" : "18",
+    "label" : {
+      "IRI-based" : "creator",
+      "undefined" : "creator"
+    },
+    "domain" : "41",
+    "comment" : {
+      "undefined" : "An entity primarily responsible for making the resource."
+    },
+    "attributes" : [ "external", "object" ],
+    "id" : "42"
+  }, {
+    "iri" : "http://purl.org/he/syllabus/ontology#score",
+    "baseIri" : "http://purl.org/he/syllabus/ontology",
+    "range" : "117",
+    "label" : {
+      "IRI-based" : "score",
+      "undefined" : "score"
+    },
+    "domain" : "15",
+    "comment" : {
+      "undefined" : "The number of points obtained in an evaluation."
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "197"
+  }, {
+    "iri" : "http://purl.org/he/syllabus/ontology#assessment",
+    "baseIri" : "http://purl.org/he/syllabus/ontology",
+    "range" : "63",
+    "label" : {
+      "IRI-based" : "assessment",
+      "undefined" : "assessment"
+    },
+    "domain" : "68",
+    "comment" : {
+      "undefined" : "An evaluation to decide the quality or importance of something."
+    },
+    "attributes" : [ "object" ],
+    "id" : "198"
+  } ]
+}

@@ -1,0 +1,1088 @@
+@prefix : <http://purl.org/he/syllabus/ontology#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@base <http://purl.org/he/syllabus/ontology#> .
+
+<http://purl.org/he/syllabus/ontology#> rdf:type owl:Ontology ;
+                                         <http://purl.org/dc/terms/creator> "Mariela Tapia-Leon" ;
+                                         <http://purl.org/dc/terms/rights> "Janneth Chicaiza" ;
+                                         rdfs:comment "Syllabus ontology provide a consensual knowledge model of syllabus domain. This model is a compilation of the main terms and objects for this particular domain and could be used by Higher Education Institutes."@en ,
+                                                      "This work is distribution under a Creative Commons Atribution License (https://creativecommons.org/licenses/by/4.0/legalcode)" ;
+                                         rdfs:label "Syllabus ontology" ;
+                                         owl:versionInfo 1.4 .
+
+#################################################################
+#    Annotation properties
+#################################################################
+
+###  http://purl.org/dc/terms/contributor
+<http://purl.org/dc/terms/contributor> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/terms/creator
+<http://purl.org/dc/terms/creator> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/terms/rights
+<http://purl.org/dc/terms/rights> rdf:type owl:AnnotationProperty .
+
+
+#################################################################
+#    Object Properties
+#################################################################
+
+###  http://linkedscience.org/teach/ns#studyProgram
+<http://linkedscience.org/teach/ns#studyProgram> rdf:type owl:ObjectProperty ;
+                                                 rdfs:domain <http://schema.org/Course> ;
+                                                 rdfs:range :Syllabus ;
+                                                 rdfs:comment "Describes the study program which is associated with the course/seminar." ;
+                                                 rdfs:label "study program" ,
+                                                            "syllabus" .
+
+
+###  http://linkedscience.org/teach/ns#teacher
+<http://linkedscience.org/teach/ns#teacher> rdf:type owl:ObjectProperty ;
+                                            rdfs:domain <http://linkedscience.org/teach/ns#Course> ;
+                                            rdfs:range <http://linkedscience.org/teach/ns#Teacher> ;
+                                            rdfs:comment "Teacher is an abstract property to relate a teacher to a course/seminar." ;
+                                            rdfs:label "teacher" .
+
+
+###  http://purl.org/dc/terms/creator
+<http://purl.org/dc/terms/creator> rdf:type owl:ObjectProperty ;
+                                   owl:equivalentProperty <http://schema.org/creator> ;
+                                   rdfs:domain :Instructor ;
+                                   rdfs:range :Syllabus .
+
+
+###  http://purl.org/dc/terms/language
+<http://purl.org/dc/terms/language> rdf:type owl:ObjectProperty ;
+                                    rdfs:domain <http://schema.org/CourseInstance> ;
+                                    rdfs:range <http://purl.org/dc/terms/LinguisticSystem> ;
+                                    rdfs:comment "A language of the resource." ;
+                                    rdfs:label "language" .
+
+
+###  http://purl.org/dc/terms/tableOfContents
+<http://purl.org/dc/terms/tableOfContents> rdf:type owl:ObjectProperty ;
+                                           rdfs:domain :Syllabus ;
+                                           rdfs:range :Content ;
+                                           rdfs:comment "A list of subunits of the resource." ;
+                                           rdfs:label "table of contents" .
+
+
+###  http://purl.org/he/syllabus/ontology#academicDegree
+:academicDegree rdf:type owl:ObjectProperty ;
+                rdfs:domain [ owl:intersectionOf ( <http://schema.org/Course>
+                                                   <http://xmlns.com/foaf/0.1/Person>
+                                                 ) ;
+                              rdf:type owl:Class
+                            ] ;
+                rdfs:range <http://vivoweb.org/ontology/core#AcademicDegree> ;
+                rdfs:comment "An academic degree at any level, both as reported by individuals for employment and as offered by academic degree programs." ;
+                rdfs:label "academic degree" .
+
+
+###  http://purl.org/he/syllabus/ontology#academicTerm
+:academicTerm rdf:type owl:ObjectProperty ;
+              rdfs:domain <http://schema.org/CourseInstance> ;
+              rdfs:range <http://vivoweb.org/ontology/core#AcademicTerm> ;
+              rdfs:comment "An explicit individual academic term, quarter, or semester rather than the generic fall, spring or summer semester." ;
+              rdfs:label "academic term" .
+
+
+###  http://purl.org/he/syllabus/ontology#academicYear
+:academicYear rdf:type owl:ObjectProperty ;
+              rdfs:domain <http://schema.org/CourseInstance> ;
+              rdfs:range <http://vivoweb.org/ontology/core#AcademicYear> ;
+              rdfs:comment "An explicit individual period considered by an academic institution to be its primary academic cycle." ;
+              rdfs:label "academic year" .
+
+
+###  http://purl.org/he/syllabus/ontology#approve
+:approve rdf:type owl:ObjectProperty ;
+         rdfs:domain :Reviewer ;
+         rdfs:range :Syllabus ;
+         rdfs:comment "Entity who approves the syllabus." ;
+         rdfs:label "approved" .
+
+
+###  http://purl.org/he/syllabus/ontology#assessment
+:assessment rdf:type owl:ObjectProperty ;
+            rdfs:domain [ owl:intersectionOf ( :Syllabus
+                                               :Topic
+                                             ) ;
+                          rdf:type owl:Class
+                        ] ;
+            rdfs:range :Assessment ;
+            rdfs:comment "An evaluation to decide the quality or importance of something." ;
+            rdfs:label "assessment" .
+
+
+###  http://purl.org/he/syllabus/ontology#assignment
+:assignment rdf:type owl:ObjectProperty ;
+            rdfs:domain [ owl:intersectionOf ( :Syllabus
+                                               :Topic
+                                             ) ;
+                          rdf:type owl:Class
+                        ] ;
+            rdfs:range <http://linkedscience.org/teach/ns#Assignment> ;
+            rdfs:comment "A piece of work given to someone, typically as part of their studies." ;
+            rdfs:label "assignment" .
+
+
+###  http://purl.org/he/syllabus/ontology#awardedBy
+:awardedBy rdf:type owl:ObjectProperty ;
+           rdfs:domain <http://vivoweb.org/ontology/core#AcademicDegree> ;
+           rdfs:range <http://schema.org/EducationalOrganization> ;
+           rdfs:comment "Academic degree awared by an educational institution." ;
+           rdfs:label "awared" .
+
+
+###  http://purl.org/he/syllabus/ontology#classroom
+:classroom rdf:type owl:ObjectProperty ;
+           rdfs:domain <http://schema.org/CourseInstance> ;
+           rdfs:range :Classroom ;
+           rdfs:comment "A room in an educational intitution where groups of students are taught." ;
+           rdfs:label "classroom" .
+
+
+###  http://purl.org/he/syllabus/ontology#goal
+:goal rdf:type owl:ObjectProperty ;
+      rdfs:domain :Syllabus ;
+      rdfs:range :GoalStatement ;
+      rdfs:comment "The goal statement is one of the most important parts of the definition syllabus. With clearly and concisely stated goals, the rest of the planning process falls naturally into place." ;
+      rdfs:label "goal" .
+
+
+###  http://purl.org/he/syllabus/ontology#hasSchedule
+:hasSchedule rdf:type owl:ObjectProperty ;
+             rdfs:domain [ owl:intersectionOf ( :Instructor
+                                                <http://schema.org/CourseInstance>
+                                              ) ;
+                           rdf:type owl:Class
+                         ] ;
+             rdfs:range :Schedule ;
+             rdfs:comment "Schedule of the class, laboratory, tutoring, etc." ;
+             rdfs:label "schedule" .
+
+
+###  http://purl.org/he/syllabus/ontology#help
+:help rdf:type owl:ObjectProperty ;
+      rdfs:domain :Syllabus ;
+      rdfs:range :Help ;
+      rdfs:comment "Information or advice given to reach success in a course" ;
+      rdfs:label "help" .
+
+
+###  http://purl.org/he/syllabus/ontology#learningResource
+:learningResource rdf:type owl:ObjectProperty ;
+                  rdfs:domain :Syllabus ;
+                  rdfs:range <http://purl.org/dc/terms/BibliographicResource> ;
+                  rdfs:comment "List of resources of the course." ;
+                  rdfs:label "learning resources" .
+
+
+###  http://purl.org/he/syllabus/ontology#methodology
+:methodology rdf:type owl:ObjectProperty ;
+             rdfs:domain :Syllabus ;
+             rdfs:range :Methodology ;
+             rdfs:comment "A system of ways of doing, teaching, or studying something." ;
+             rdfs:label "methodology" .
+
+
+###  http://purl.org/he/syllabus/ontology#policy
+:policy rdf:type owl:ObjectProperty ;
+        rdfs:domain :Syllabus ;
+        rdfs:range :Policy ;
+        rdfs:comment "Education policy are the principles and government policy-making in the educational sphere." ;
+        rdfs:label "policy" .
+
+
+###  http://purl.org/he/syllabus/ontology#taxon
+:taxon rdf:type owl:ObjectProperty ;
+       rdfs:domain :GoalStatement ;
+       rdfs:range <http://www.fonte-project.net/ontologies/SICRA.owlTaxonomiaBloom> ;
+       rdfs:comment "Bloom’s Taxonomy is a classification of the different objectives and skills that educators set for their students (learning objectives)." ;
+       rdfs:label "Bloom taxonomy" .
+
+
+###  http://purl.org/he/syllabus/ontology#workload
+:workload rdf:type owl:ObjectProperty ;
+          rdfs:domain :Syllabus ;
+          rdfs:range :Workload ;
+          rdfs:comment "The amount of work or of working time expected or assigned to do an activity." ;
+          rdfs:label "workload" .
+
+
+###  http://purl.org/spar/fabio/hasManifestation
+<http://purl.org/spar/fabio/hasManifestation> rdf:type owl:ObjectProperty ;
+                                              rdfs:domain <http://purl.org/vocab/frbr/core#Work> ;
+                                              rdfs:range <http://purl.org/vocab/frbr/core#Manifestation> ;
+                                              rdfs:comment "A property linking a particular work to its manifestations" ;
+                                              rdfs:label "has manifestation" .
+
+
+###  http://purl.org/spar/pro/holdsRoleInTime
+<http://purl.org/spar/pro/holdsRoleInTime> rdf:type owl:ObjectProperty ;
+                                           rdfs:domain <http://xmlns.com/foaf/0.1/Agent> ;
+                                           rdfs:range <http://purl.org/spar/pro/RoleInTime> ;
+                                           rdfs:comment "A property relating an agent to a role that the agent holds." ;
+                                           rdfs:label "holds role in time" .
+
+
+###  http://purl.org/spar/pro/withRole
+<http://purl.org/spar/pro/withRole> rdf:type owl:ObjectProperty ;
+                                    rdfs:domain <http://purl.org/spar/pro/RoleInTime> ;
+                                    rdfs:range <http://purl.org/spar/pro/Role> ;
+                                    rdfs:comment "An object property connecting an agent's role in time to a definition of the type of role held by this agent, specified as an instance of the class pro:Role or of one of its sub-classes." ;
+                                    rdfs:label "with role" .
+
+
+###  http://purl.org/vocab/aiiso/schema#part_of
+<http://purl.org/vocab/aiiso/schema#part_of> rdf:type owl:ObjectProperty ;
+                                             rdfs:domain <http://schema.org/Organization> ;
+                                             rdfs:range <http://schema.org/Organization> ;
+                                             rdfs:comment "A foaf Organization may refer to its parent Organizations using part_of." ;
+                                             rdfs:label "part of" .
+
+
+###  http://purl.org/vocab/frbr/core#embodiment
+<http://purl.org/vocab/frbr/core#embodiment> rdf:type owl:ObjectProperty ;
+                                             rdfs:domain <http://purl.org/vocab/frbr/core#Expression> ;
+                                             rdfs:range <http://purl.org/vocab/frbr/core#Manifestation> ;
+                                             rdfs:comment "An expression embodied in a manifestation." ;
+                                             rdfs:label "embodiment" .
+
+
+###  http://purl.org/vocab/frbr/core#realization
+<http://purl.org/vocab/frbr/core#realization> rdf:type owl:ObjectProperty ;
+                                              rdfs:domain <http://purl.org/vocab/frbr/core#Work> ;
+                                              rdfs:range <http://purl.org/vocab/frbr/core#Expression> ;
+                                              rdfs:comment "A work realized through an expression" ;
+                                              rdfs:label "realization" .
+
+
+###  http://schema.org/audience
+<http://schema.org/audience> rdf:type owl:ObjectProperty ;
+                             rdfs:domain <http://schema.org/Course> ;
+                             rdfs:range <http://schema.org/Audience> ;
+                             rdfs:comment "Intended audience for an item, i.e. the group for whom the item was created." ;
+                             rdfs:label "audience" .
+
+
+###  http://schema.org/coursePrerequisites
+<http://schema.org/coursePrerequisites> rdf:type owl:ObjectProperty ;
+                                        owl:equivalentProperty <http://vivoweb.org/ontology/core#hasPrerequisite> ;
+                                        rdfs:domain <http://schema.org/Course> ;
+                                        rdfs:range <http://schema.org/Course> ;
+                                        rdfs:comment "Requirements for taking the Course." ;
+                                        rdfs:label "prerequisite" .
+
+
+###  http://schema.org/creator
+<http://schema.org/creator> rdf:type owl:ObjectProperty ;
+                            rdfs:domain :Instructor ;
+                            rdfs:range :Syllabus ;
+                            rdfs:comment "The creator/author of this CreativeWork. This is the same as the Author property for CreativeWork." ;
+                            rdfs:label "creator" .
+
+
+###  http://schema.org/hasCourseInstance
+<http://schema.org/hasCourseInstance> rdf:type owl:ObjectProperty ;
+                                      rdfs:domain <http://schema.org/Course> ;
+                                      rdfs:range <http://schema.org/CourseInstance> ;
+                                      rdfs:comment "An offering of the course at a specific time and place or through specific media or mode of study or to a specific section of students." ;
+                                      rdfs:label "course instance" .
+
+
+###  http://schema.org/instructor
+<http://schema.org/instructor> rdf:type owl:ObjectProperty ;
+                               rdfs:domain <http://schema.org/CourseInstance> ;
+                               rdfs:range :Instructor ;
+                               rdfs:comment "A person assigned to instruct or provide instructional assistance for the CourseInstance." ;
+                               rdfs:label "instructor" ,
+                                          "professor" .
+
+
+###  http://vivoweb.org/ontology/core#hasPrerequisite
+<http://vivoweb.org/ontology/core#hasPrerequisite> rdf:type owl:ObjectProperty ;
+                                                   rdfs:domain <http://vivoweb.org/ontology/core#Course> ;
+                                                   rdfs:range <http://vivoweb.org/ontology/core#Course> ;
+                                                   rdfs:comment "The prerequisites for taking the course." ;
+                                                   rdfs:label "prerequisite" .
+
+
+###  http://www.essepuntato.it/2012/04/tvc/atTime
+<http://www.essepuntato.it/2012/04/tvc/atTime> rdf:type owl:ObjectProperty ;
+                                               rdfs:domain [ owl:intersectionOf ( :Schedule
+                                                                                  <http://purl.org/spar/pro/RoleInTime>
+                                                                                  <http://schema.org/CourseInstance>
+                                                                                ) ;
+                                                             rdf:type owl:Class
+                                                           ] ;
+                                               rdfs:range <http://www.ontologydesignpatterns.org/cp/owl/timeinterval.owl#TimeInterval> ;
+                                               rdfs:comment "time of the event" ;
+                                               rdfs:label "at Time" .
+
+
+###  http://www.w3.org/2004/02/skos/core#broader
+<http://www.w3.org/2004/02/skos/core#broader> rdf:type owl:ObjectProperty ;
+                                              rdfs:domain <http://www.w3.org/2004/02/skos/core#Concept> ;
+                                              rdfs:range <http://www.w3.org/2004/02/skos/core#Concept> ;
+                                              rdfs:comment "has skos broader" ;
+                                              rdfs:label "broader" .
+
+
+###  http://www.w3.org/2004/02/skos/core#member
+<http://www.w3.org/2004/02/skos/core#member> rdf:type owl:ObjectProperty ;
+                                             rdfs:domain <http://www.w3.org/2004/02/skos/core#Collection> ;
+                                             rdfs:range [ owl:intersectionOf ( <http://www.w3.org/2004/02/skos/core#Collection>
+                                                                               <http://www.w3.org/2004/02/skos/core#Concept>
+                                                                             ) ;
+                                                          rdf:type owl:Class
+                                                        ] ;
+                                             rdfs:comment "Collection has member" ;
+                                             rdfs:label "has member" .
+
+
+###  http://xmlns.com/foaf/0.1/member
+<http://xmlns.com/foaf/0.1/member> rdf:type owl:ObjectProperty ;
+                                   rdfs:domain <http://schema.org/Person> ;
+                                   rdfs:range <http://schema.org/Organization> ;
+                                   rdfs:comment "Indicates a member of a Group." ;
+                                   rdfs:label "member of a group" .
+
+
+#################################################################
+#    Data properties
+#################################################################
+
+###  http://purl.org/dc/terms/description
+<http://purl.org/dc/terms/description> rdf:type owl:DatatypeProperty ;
+                                       rdfs:domain [ owl:intersectionOf ( <http://linkedscience.org/teach/ns#Assignment>
+                                                                          :Assessment
+                                                                          :Classroom
+                                                                          :Help
+                                                                          :Methodology
+                                                                          :Policy
+                                                                          :Syllabus
+                                                                          <http://vivoweb.org/ontology/core#Course>
+                                                                        ) ;
+                                                     rdf:type owl:Class
+                                                   ] ;
+                                       rdfs:range xsd:string ;
+                                       rdfs:comment "An account of the resource." ;
+                                       rdfs:label "description" .
+
+
+###  http://purl.org/dc/terms/hasVersion
+<http://purl.org/dc/terms/hasVersion> rdf:type owl:DatatypeProperty ;
+                                      rdfs:domain :Syllabus ;
+                                      rdfs:range xsd:string ;
+                                      rdfs:comment " A related resource that is a version, edition, or adaptation of the described resource." ;
+                                      rdfs:label "version" .
+
+
+###  http://purl.org/dc/terms/title
+<http://purl.org/dc/terms/title> rdf:type owl:DatatypeProperty ;
+                                 rdfs:domain :Syllabus ;
+                                 rdfs:range xsd:string ;
+                                 rdfs:comment "A name given to the resource." ;
+                                 rdfs:label "title" .
+
+
+###  http://purl.org/he/syllabus/ontology#bibliographicCitation
+:bibliographicCitation rdf:type owl:DatatypeProperty ;
+                       rdfs:domain <http://purl.org/dc/terms/BibliographicResource> ;
+                       rdfs:range xsd:string ;
+                       rdfs:comment "A bibliographic reference for the resource." ;
+                       rdfs:label "bibliographic citation" .
+
+
+###  http://purl.org/he/syllabus/ontology#deadline
+:deadline rdf:type owl:DatatypeProperty ;
+          rdfs:domain [ owl:intersectionOf ( <http://linkedscience.org/teach/ns#Assignment>
+                                             :Assessment
+                                           ) ;
+                        rdf:type owl:Class
+                      ] ;
+          rdfs:range xsd:dateTime ;
+          rdfs:comment "Date the content expires and is no longer useful or available." ;
+          rdfs:label "deadline" .
+
+
+###  http://purl.org/he/syllabus/ontology#durationPerTerm
+:durationPerTerm rdf:type owl:DatatypeProperty ;
+                 rdfs:domain :Workload ;
+                 rdfs:range xsd:nonNegativeInteger ;
+                 rdfs:comment "duration of workload per term" ;
+                 rdfs:label "duration per term" .
+
+
+###  http://purl.org/he/syllabus/ontology#durationPerWeek
+:durationPerWeek rdf:type owl:DatatypeProperty ;
+                 rdfs:domain :Workload ;
+                 rdfs:range xsd:nonNegativeInteger ;
+                 rdfs:comment "duration of workload per week" ;
+                 rdfs:label "duration per week" .
+
+
+###  http://purl.org/he/syllabus/ontology#educationLevel
+:educationLevel rdf:type owl:DatatypeProperty ;
+                rdfs:domain <http://vivoweb.org/ontology/core#AcademicDegree> ;
+                rdfs:range xsd:string ;
+                rdfs:comment "A class of entity, defined in terms of progression through an educational or training context, for which the described resource is intended" ;
+                rdfs:label "education level" .
+
+
+###  http://purl.org/he/syllabus/ontology#office
+:office rdf:type owl:DatatypeProperty ;
+        rdfs:domain :Instructor ;
+        rdfs:range xsd:string ;
+        rdfs:comment "Office of the teacher" ;
+        rdfs:label "office" .
+
+
+###  http://purl.org/he/syllabus/ontology#order
+:order rdf:type owl:DatatypeProperty ;
+       rdfs:domain :Topic ;
+       rdfs:range xsd:string ;
+       rdfs:comment "The sequence in which the study topics are arranged." ;
+       rdfs:label "order" .
+
+
+###  http://purl.org/he/syllabus/ontology#requirement
+:requirement rdf:type owl:DatatypeProperty ;
+             rdfs:domain :Syllabus ;
+             rdfs:range xsd:string ;
+             rdfs:comment "Requirements for taking the Course. May be completion of another Course or a textual description like \"permission of instructor\". Requirements may be a pre-requisite competency, referenced using AlignmentObject." ;
+             rdfs:label "requirement" .
+
+
+###  http://purl.org/he/syllabus/ontology#resume
+:resume rdf:type owl:DatatypeProperty ;
+        rdfs:domain :Instructor ;
+        rdfs:range xsd:string ;
+        rdfs:comment "Short written description of the teacher experience." ;
+        rdfs:label "resume" .
+
+
+###  http://purl.org/he/syllabus/ontology#score
+:score rdf:type owl:DatatypeProperty ;
+       rdfs:domain [ owl:intersectionOf ( <http://linkedscience.org/teach/ns#Assignment>
+                                          :Assessment
+                                        ) ;
+                     rdf:type owl:Class
+                   ] ;
+       rdfs:range xsd:string ;
+       rdfs:comment "The number of points obtained in an evaluation." ;
+       rdfs:label "score" .
+
+
+###  http://purl.org/he/syllabus/ontology#studyStrategy
+:studyStrategy rdf:type owl:DatatypeProperty ;
+               rdfs:domain :Methodology ;
+               rdfs:range xsd:string ;
+               rdfs:comment "Study tips or strategies to improve your studies." ;
+               rdfs:label "study strategy" .
+
+
+###  http://purl.org/he/syllabus/ontology#type
+:type rdf:type owl:DatatypeProperty ;
+      rdfs:domain [ owl:intersectionOf ( <http://linkedscience.org/teach/ns#Assignment>
+                                         <http://purl.org/dc/terms/BibliographicResource>
+                                         :Assessment
+                                         :Classroom
+                                         :Instructor
+                                         :Topic
+                                         <http://vivoweb.org/ontology/core#Course>
+                                       ) ;
+                    rdf:type owl:Class
+                  ] ;
+      rdfs:range xsd:string ;
+      rdfs:comment "Category or type of something." ;
+      rdfs:label "type" .
+
+
+###  http://purl.org/he/syllabus/ontology#unitPerTerm
+:unitPerTerm rdf:type owl:DatatypeProperty ;
+             rdfs:domain :Workload ;
+             rdfs:range xsd:string ;
+             rdfs:comment "unit to measure workload by term" ;
+             rdfs:label "unit per term" .
+
+
+###  http://purl.org/he/syllabus/ontology#unitPerWeek
+:unitPerWeek rdf:type owl:DatatypeProperty ;
+             rdfs:domain :Workload ;
+             rdfs:range xsd:string ;
+             rdfs:comment "unit to measure workload by week" ;
+             rdfs:label "unit per week" .
+
+
+###  http://purl.org/he/syllabus/ontology#weight
+:weight rdf:type owl:DatatypeProperty ;
+        rdfs:domain [ owl:intersectionOf ( <http://linkedscience.org/teach/ns#Assignment>
+                                           :Assessment
+                                         ) ;
+                      rdf:type owl:Class
+                    ] ;
+        rdfs:range xsd:string ;
+        rdfs:comment "weight of the assignment" ;
+        rdfs:label "weight" .
+
+
+###  http://purl.org/vocab/aiiso/schema#code
+<http://purl.org/vocab/aiiso/schema#code> rdf:type owl:DatatypeProperty ;
+                                          owl:equivalentProperty <http://schema.org/courseCode> ;
+                                          rdfs:domain <http://schema.org/Course> ;
+                                          rdfs:range xsd:string ;
+                                          rdfs:comment "A person assigned to instruct or provide instructional assistance for the CourseInstance." ;
+                                          rdfs:label "code" .
+
+
+###  http://schema.org/address
+<http://schema.org/address> rdf:type owl:DatatypeProperty ;
+                            rdfs:domain <http://schema.org/Place> ;
+                            rdfs:range xsd:string ;
+                            rdfs:comment "Physical address of the item." ;
+                            rdfs:label "address" .
+
+
+###  http://schema.org/courseCode
+<http://schema.org/courseCode> rdf:type owl:DatatypeProperty ;
+                               rdfs:domain <http://schema.org/Course> ;
+                               rdfs:range xsd:string ;
+                               rdfs:comment "The identifier for the Course used by the course provider." ;
+                               rdfs:label "code" .
+
+
+###  http://schema.org/courseMode
+<http://schema.org/courseMode> rdf:type owl:DatatypeProperty ;
+                               rdfs:subPropertyOf owl:topDataProperty ;
+                               rdfs:domain <http://schema.org/CourseInstance> ;
+                               rdfs:range xsd:string ;
+                               rdfs:comment "The medium or means of delivery of the course instance or the mode of study, either as a text label (e.g. \"online\", \"onsite\" or \"blended\"; \"synchronous\" or \"asynchronous\"; \"full-time\" or \"part-time\") or as a URL reference to a term from a controlled vocabulary." ;
+                               rdfs:label "course mode" .
+
+
+###  http://schema.org/description
+<http://schema.org/description> rdf:type owl:DatatypeProperty ;
+                                rdfs:domain [ owl:intersectionOf ( <http://linkedscience.org/teach/ns#Assignment>
+                                                                   :Assessment
+                                                                   :Classroom
+                                                                   :Help
+                                                                   :Methodology
+                                                                   :Policy
+                                                                   :Syllabus
+                                                                   <http://vivoweb.org/ontology/core#Course>
+                                                                 ) ;
+                                              rdf:type owl:Class
+                                            ] ;
+                                rdfs:range xsd:string ;
+                                rdfs:comment "A description of the item." ;
+                                rdfs:label "description" .
+
+
+###  http://schema.org/email
+<http://schema.org/email> rdf:type owl:DatatypeProperty ;
+                          rdfs:domain <http://schema.org/Agent> ;
+                          rdfs:range xsd:string ;
+                          rdfs:comment "Email address." ;
+                          rdfs:label "email" .
+
+
+###  http://schema.org/identifier
+<http://schema.org/identifier> rdf:type owl:DatatypeProperty ;
+                               rdfs:domain [ owl:intersectionOf ( <http://linkedscience.org/teach/ns#Assignment>
+                                                                  :Assessment
+                                                                  :Classroom
+                                                                ) ;
+                                             rdf:type owl:Class
+                                           ] ;
+                               rdfs:range xsd:string ;
+                               rdfs:comment "The number o identifier of a class or activity." ;
+                               rdfs:label "identifier" .
+
+
+###  http://schema.org/name
+<http://schema.org/name> rdf:type owl:DatatypeProperty ;
+                         rdfs:domain [ owl:intersectionOf ( <http://schema.org/Agent>
+                                                            <http://schema.org/Course>
+                                                            <http://schema.org/Place>
+                                                          ) ;
+                                       rdf:type owl:Class
+                                     ] ;
+                         rdfs:range xsd:string ;
+                         rdfs:comment "The name of the item." ;
+                         rdfs:label "name" .
+
+
+###  http://schema.org/telephone
+<http://schema.org/telephone> rdf:type owl:DatatypeProperty ;
+                              rdfs:domain <http://schema.org/Agent> ;
+                              rdfs:range xsd:string ;
+                              rdfs:comment "The telephone number." ;
+                              rdfs:label "telephone" .
+
+
+###  http://schema.org/url
+<http://schema.org/url> rdf:type owl:DatatypeProperty ;
+                        rdfs:domain [ owl:intersectionOf ( :Syllabus
+                                                           <http://xmlns.com/foaf/0.1/Agent>
+                                                         ) ;
+                                      rdf:type owl:Class
+                                    ] ;
+                        rdfs:range xsd:string ;
+                        rdfs:comment "URL of the resource" ;
+                        rdfs:label "url" .
+
+
+###  http://vivoweb.org/ontology/core#courseCredits
+<http://vivoweb.org/ontology/core#courseCredits> rdf:type owl:DatatypeProperty ;
+                                                 rdfs:domain <http://schema.org/Course> ;
+                                                 rdfs:range rdfs:Literal ;
+                                                 rdfs:comment "Number of credits assigned a course by an learning institution." ;
+                                                 rdfs:label "course credits" .
+
+
+###  http://www.ontologydesignpatterns.org/cp/owl/timeinterval.owl#hasIntervalDate
+<http://www.ontologydesignpatterns.org/cp/owl/timeinterval.owl#hasIntervalDate> rdf:type owl:DatatypeProperty ;
+                                                                                rdfs:domain <http://www.ontologydesignpatterns.org/cp/owl/timeinterval.owl#TimeInterval> ;
+                                                                                rdfs:range xsd:dateTime ;
+                                                                                rdfs:comment "A datatype property that encodes values from xsd:date for a time interval; a same time interval can have more than one xsd:date value: begin date, end date, date at which the interval holds, as well as dates expressed in different formats: xsd:gYear, xsd:dateTime, etc." ;
+                                                                                rdfs:label "has interval date" .
+
+
+###  http://www.ontologydesignpatterns.org/cp/owl/timeinterval.owl#hasIntervalEndDate
+<http://www.ontologydesignpatterns.org/cp/owl/timeinterval.owl#hasIntervalEndDate> rdf:type owl:DatatypeProperty ;
+                                                                                   rdfs:domain <http://www.ontologydesignpatterns.org/cp/owl/timeinterval.owl#TimeInterval> ;
+                                                                                   rdfs:range xsd:dateTime ;
+                                                                                   rdfs:comment "The end date of a time interval." ;
+                                                                                   rdfs:label "end date" .
+
+
+###  http://www.ontologydesignpatterns.org/cp/owl/timeinterval.owl#hasIntervalStartDate
+<http://www.ontologydesignpatterns.org/cp/owl/timeinterval.owl#hasIntervalStartDate> rdf:type owl:DatatypeProperty ;
+                                                                                     rdfs:domain <http://www.ontologydesignpatterns.org/cp/owl/timeinterval.owl#TimeInterval> ;
+                                                                                     rdfs:range xsd:dateTime ;
+                                                                                     rdfs:comment "The start date of a time interval." ;
+                                                                                     rdfs:label "start date" .
+
+
+###  http://xmlns.com/foaf/0.1/name
+<http://xmlns.com/foaf/0.1/name> rdf:type owl:DatatypeProperty ;
+                                 rdfs:domain [ owl:intersectionOf ( <http://schema.org/Agent>
+                                                                    <http://schema.org/Course>
+                                                                    <http://schema.org/Place>
+                                                                  ) ;
+                                               rdf:type owl:Class
+                                             ] ;
+                                 rdfs:range xsd:string ;
+                                 rdfs:comment "The name of something is a simple textual string." ;
+                                 rdfs:label "name" .
+
+
+#################################################################
+#    Classes
+#################################################################
+
+###  http://linkedscience.org/teach/ns#Assignment
+<http://linkedscience.org/teach/ns#Assignment> rdf:type owl:Class ;
+                                               rdfs:comment "Assignment of a course, for example an exercise." ;
+                                               rdfs:label "Assignment" .
+
+
+###  http://linkedscience.org/teach/ns#Course
+<http://linkedscience.org/teach/ns#Course> rdf:type owl:Class ;
+                                           owl:equivalentClass <http://purl.org/vocab/aiiso/schema#Course> ,
+                                                               <http://schema.org/Course> ,
+                                                               <http://vivoweb.org/ontology/core#Course> ;
+                                           rdfs:comment "Course is where students are supposed to learn something." ;
+                                           rdfs:label "Course" .
+
+
+###  http://linkedscience.org/teach/ns#Teacher
+<http://linkedscience.org/teach/ns#Teacher> rdf:type owl:Class ;
+                                            owl:equivalentClass :Instructor ;
+                                            rdfs:comment "Teacher of the course." ;
+                                            rdfs:label "Professor" ,
+                                                       "Teacher" .
+
+
+###  http://purl.org/dc/terms/BibliographicResource
+<http://purl.org/dc/terms/BibliographicResource> rdf:type owl:Class ;
+                                                 rdfs:comment "A book, article, or other documentary resource." ;
+                                                 rdfs:label "Bibliographic Resource" ,
+                                                            "Learning Resource" .
+
+
+###  http://purl.org/dc/terms/LinguisticSystem
+<http://purl.org/dc/terms/LinguisticSystem> rdf:type owl:Class ;
+                                            rdfs:comment "A system of signs, symbols, sounds, gestures, or rules used in communication." ;
+                                            rdfs:label "Language" ,
+                                                       "Lingüistic System" .
+
+
+###  http://purl.org/he/syllabus/ontology#Accessibility
+:Accessibility rdf:type owl:Class ;
+               rdfs:subClassOf :Policy ;
+               rdfs:comment "Policy to meet the requirements for class adaptation for students with disabilities." ;
+               rdfs:label "Accessibility" .
+
+
+###  http://purl.org/he/syllabus/ontology#Assessment
+:Assessment rdf:type owl:Class ;
+            rdfs:comment "Refers to the wide variety of methods or tools that educators use to evaluate, measure, and document the academic readiness, learning progress, skill acquisition, or educational needs of students." ;
+            rdfs:label "Assessment" .
+
+
+###  http://purl.org/he/syllabus/ontology#Attendance
+:Attendance rdf:type owl:Class ;
+            rdfs:subClassOf :Policy ;
+            rdfs:comment "Defines absences and tardiness, includes rules for attendance, and lays out disciplinary actions." ;
+            rdfs:label "Attendance Policy" .
+
+
+###  http://purl.org/he/syllabus/ontology#Classroom
+:Classroom rdf:type owl:Class ;
+           rdfs:subClassOf <http://schema.org/Place> ;
+           rdfs:comment "A room in an educational intitution where groups of students are taught" ;
+           rdfs:label "Classroom" .
+
+
+###  http://purl.org/he/syllabus/ontology#Competence
+:Competence rdf:type owl:Class ;
+            owl:equivalentClass <http://www.teste/ontologies/IEEE_RCD_Impl.owlCompetence> ;
+            rdfs:subClassOf :GoalStatement ;
+            rdfs:comment "A very specific statement that describes exactly what a student will be able to do in some measurable way. There may be more than one measurable outcome defined for a given competency." ;
+            rdfs:label "Competence" ,
+                       "Competency" .
+
+
+###  http://purl.org/he/syllabus/ontology#Content
+:Content rdf:type owl:Class ;
+         rdfs:subClassOf <http://www.w3.org/2004/02/skos/core#Collection> ;
+         rdfs:comment "A list of subunits of the resource." ;
+         rdfs:label "Content" .
+
+
+###  http://purl.org/he/syllabus/ontology#DropOut
+:DropOut rdf:type owl:Class ;
+         rdfs:subClassOf :Policy ;
+         rdfs:comment "Defines the actions by which a student may be removed from the course" ;
+         rdfs:label "Drop out policy" .
+
+
+###  http://purl.org/he/syllabus/ontology#GoalStatement
+:GoalStatement rdf:type owl:Class ;
+               rdfs:comment "The goal statement is one of the most important parts of the definition syllabus. With clearly and concisely stated goals, the rest of the planning process falls naturally into place." ;
+               rdfs:label "Goal Statement" .
+
+
+###  http://purl.org/he/syllabus/ontology#Help
+:Help rdf:type owl:Class ;
+      rdfs:comment "Information or advice given to reach success in a course" ;
+      rdfs:label "Help" .
+
+
+###  http://purl.org/he/syllabus/ontology#Instructor
+:Instructor rdf:type owl:Class ;
+            rdfs:subClassOf <http://schema.org/Person> ;
+            rdfs:comment "A person assigned to instruct or provide instructional assistance for the CourseInstance." ;
+            rdfs:label "Instructor" ,
+                       "Professor" ,
+                       "Teacher" .
+
+
+###  http://purl.org/he/syllabus/ontology#LearningObjective
+:LearningObjective rdf:type owl:Class ;
+                   rdfs:subClassOf :GoalStatement ;
+                   rdfs:comment "Learning objectives are statements that define the expected goal of a curriculum, course, lesson or activity interms of demonstrable skills or knowledge that will be acquired by a student as a result of instruction." ;
+                   rdfs:label "Learning objective" .
+
+
+###  http://purl.org/he/syllabus/ontology#LearningOutcome
+:LearningOutcome rdf:type owl:Class ;
+                 rdfs:subClassOf :GoalStatement ;
+                 rdfs:comment "Learning outcomes are statements that describe significant and essential learning that learners have achieved, and can reliably demonstrate at the end of a course or program. In other words, learning outcomes identify what the learner will know and be able to do by the end of a course or program." ;
+                 rdfs:label "Learning outcome" .
+
+
+###  http://purl.org/he/syllabus/ontology#Methodology
+:Methodology rdf:type owl:Class ;
+             rdfs:comment "A system of ways of doing, teaching, or studying something." ;
+             rdfs:label "Methodology" .
+
+
+###  http://purl.org/he/syllabus/ontology#Policy
+:Policy rdf:type owl:Class ;
+        rdfs:comment "Education policy are the principles and government policy-making in the educational sphere." ;
+        rdfs:label "Educational Policy" .
+
+
+###  http://purl.org/he/syllabus/ontology#Qualification
+:Qualification rdf:type owl:Class ;
+               rdfs:subClassOf :Policy ;
+               rdfs:comment "The rules that determine a qualification." ;
+               rdfs:label "Qualification Policy" .
+
+
+###  http://purl.org/he/syllabus/ontology#Reviewer
+:Reviewer rdf:type owl:Class ;
+          rdfs:subClassOf <http://purl.org/spar/pro/Role> ;
+          rdfs:comment "The person who monitors, directs and approves the activities carried out by a group of people." ;
+          rdfs:label "Entity that approves a Syllabus" .
+
+
+###  http://purl.org/he/syllabus/ontology#Schedule
+:Schedule rdf:type owl:Class ;
+          rdfs:comment "Schedule of the class. It apply for tutoring, classes, laboratory, etc." ;
+          rdfs:label "Schedule" .
+
+
+###  http://purl.org/he/syllabus/ontology#Syllabus
+:Syllabus rdf:type owl:Class ;
+          rdfs:subClassOf <http://purl.org/vocab/frbr/core#Work> ;
+          rdfs:comment "A syllabus is a document that outlines everything that will be covered in a course" ;
+          rdfs:label "Syllabus" .
+
+
+###  http://purl.org/he/syllabus/ontology#Topic
+:Topic rdf:type owl:Class ;
+       rdfs:subClassOf <http://www.w3.org/2004/02/skos/core#Concept> ;
+       rdfs:comment "The topic or the subject of the course." ;
+       rdfs:label "Subject" ,
+                  "Topic" .
+
+
+###  http://purl.org/he/syllabus/ontology#Workload
+:Workload rdf:type owl:Class ;
+          rdfs:comment "The amount of work or of working time expected or assigned to do an activity." ;
+          rdfs:label "WorkLoad" .
+
+
+###  http://purl.org/spar/pro/Role
+<http://purl.org/spar/pro/Role> rdf:type owl:Class ;
+                                rdfs:comment "A role an agent may have. Individual members of this class or its sub-classes are used to specify particular roles." ;
+                                rdfs:label "Role" .
+
+
+###  http://purl.org/spar/pro/RoleInTime
+<http://purl.org/spar/pro/RoleInTime> rdf:type owl:Class ;
+                                      rdfs:comment "A particular situation that describe a role an agent may have, that can be restricted to a particular time interval." ;
+                                      rdfs:label "Role in Time" .
+
+
+###  http://purl.org/vocab/aiiso/schema#Course
+<http://purl.org/vocab/aiiso/schema#Course> rdf:type owl:Class ;
+                                            owl:equivalentClass <http://schema.org/Course> ,
+                                                                <http://vivoweb.org/ontology/core#Course> ;
+                                            rdfs:comment "A course is a KnowledgeGrouping that represents a cohesive collection of educational material referred to by the owning organization as a course." ;
+                                            rdfs:label "Course" .
+
+
+###  http://purl.org/vocab/aiiso/schema#Department
+<http://purl.org/vocab/aiiso/schema#Department> rdf:type owl:Class ;
+                                                rdfs:subClassOf <http://schema.org/Organization> ;
+                                                rdfs:comment "A Department is a group of people recognised by an organization as forming a cohesive group referred to by the organization as a department." ;
+                                                rdfs:label "Department" .
+
+
+###  http://purl.org/vocab/aiiso/schema#Faculty
+<http://purl.org/vocab/aiiso/schema#Faculty> rdf:type owl:Class ;
+                                             rdfs:subClassOf <http://schema.org/Organization> ;
+                                             rdfs:comment "" ,
+                                                          "A Faculty is a group of people recognised by an organization as forming a cohesive group referred to by the organization as a faculty." ;
+                                             rdfs:label "Faculty" .
+
+
+###  http://purl.org/vocab/aiiso/schema#KnowledgeGrouping
+<http://purl.org/vocab/aiiso/schema#KnowledgeGrouping> rdf:type owl:Class ;
+                                                       rdfs:comment "A KnowledgeGrouping represents a collection of resources, learning objectives, timetables, and other materials." ;
+                                                       rdfs:label "Knowledge Grouping" .
+
+
+###  http://purl.org/vocab/aiiso/schema#School
+<http://purl.org/vocab/aiiso/schema#School> rdf:type owl:Class ;
+                                            rdfs:subClassOf <http://schema.org/Organization> ;
+                                            rdfs:comment "A School is a group of people recognised by an organization as forming a cohesive group referred to by the organization as a school." ;
+                                            rdfs:label "School" .
+
+
+###  http://purl.org/vocab/frbr/core#Expression
+<http://purl.org/vocab/frbr/core#Expression> rdf:type owl:Class ;
+                                             rdfs:comment "The intellectual or artistic realization of a work in the form of alpha-numeric, musical, or choreographic notation, sound, image, object, movement, etc., or any combination of such forms." ;
+                                             rdfs:label "Expression" .
+
+
+###  http://purl.org/vocab/frbr/core#Manifestation
+<http://purl.org/vocab/frbr/core#Manifestation> rdf:type owl:Class ;
+                                                rdfs:comment "The physical embodiment of an expression of a work." ;
+                                                rdfs:label "Manifestation" .
+
+
+###  http://purl.org/vocab/frbr/core#Work
+<http://purl.org/vocab/frbr/core#Work> rdf:type owl:Class ;
+                                       rdfs:comment "A distinct intellectual or artistic creation." ;
+                                       rdfs:label "Work" .
+
+
+###  http://schema.org/Agent
+<http://schema.org/Agent> rdf:type owl:Class ;
+                          owl:equivalentClass <http://xmlns.com/foaf/0.1/Agent> ;
+                          rdfs:comment "The direct performer or driver of the action." ;
+                          rdfs:label "Agent" .
+
+
+###  http://schema.org/Audience
+<http://schema.org/Audience> rdf:type owl:Class ;
+                             rdfs:comment "Intended audience for an item, i.e. the group for whom the item was created." ;
+                             rdfs:label "Audience" .
+
+
+###  http://schema.org/Course
+<http://schema.org/Course> rdf:type owl:Class ;
+                           owl:equivalentClass <http://vivoweb.org/ontology/core#Course> ;
+                           rdfs:comment "A description of an educational course which may be offered as distinct instances at which take place at different times or take place at different locations, or be offered through different media or modes of study. An educational course is a sequence of one or more educational events and/or creative works which aims to build knowledge, competence or ability of learners." ;
+                           rdfs:label "Course" .
+
+
+###  http://schema.org/CourseInstance
+<http://schema.org/CourseInstance> rdf:type owl:Class ;
+                                   rdfs:comment "An instance of a Course which is distinct from other instances because it is offered at a different time or location or through different media or modes of study or to a specific section of students." ;
+                                   rdfs:label "Course instance" .
+
+
+###  http://schema.org/EducationalOrganization
+<http://schema.org/EducationalOrganization> rdf:type owl:Class ;
+                                            rdfs:subClassOf <http://schema.org/Organization> ;
+                                            rdfs:comment "An educational organization." ;
+                                            rdfs:label "Educational Organization" .
+
+
+###  http://schema.org/Organization
+<http://schema.org/Organization> rdf:type owl:Class ;
+                                 owl:equivalentClass <http://xmlns.com/foaf/0.1/Organization> ;
+                                 rdfs:subClassOf <http://schema.org/Agent> ,
+                                                 <http://xmlns.com/foaf/0.1/Agent> ;
+                                 owl:disjointWith <http://xmlns.com/foaf/0.1/Person> ;
+                                 rdfs:comment "An organization such as a school." ,
+                                              "The Organization class represents a kind of Agent corresponding to social instititutions such as companies, societies etc." ;
+                                 rdfs:label "Organization" .
+
+
+###  http://schema.org/Person
+<http://schema.org/Person> rdf:type owl:Class ;
+                           owl:equivalentClass <http://xmlns.com/foaf/0.1/Person> ;
+                           rdfs:subClassOf <http://schema.org/Agent> ;
+                           rdfs:comment "A person (alive, dead, undead, of fictional)." ;
+                           rdfs:label "Person" .
+
+
+###  http://schema.org/Place
+<http://schema.org/Place> rdf:type owl:Class ;
+                          rdfs:comment "Entities that have a somewhat fixed, physical extension." ;
+                          rdfs:label "Place" .
+
+
+###  http://vivoweb.org/ontology/core#AcademicDegree
+<http://vivoweb.org/ontology/core#AcademicDegree> rdf:type owl:Class ;
+                                                  rdfs:comment "An academic degree at any level, both as reported by individuals for employment and as offered by academic degree programs." ;
+                                                  rdfs:label "Academic Degree" .
+
+
+###  http://vivoweb.org/ontology/core#AcademicTerm
+<http://vivoweb.org/ontology/core#AcademicTerm> rdf:type owl:Class ;
+                                                rdfs:comment "An explicit individual academic term, quarter, or semester rather than the generic fall, spring or summer semester." ;
+                                                rdfs:label "Academic Term" .
+
+
+###  http://vivoweb.org/ontology/core#AcademicYear
+<http://vivoweb.org/ontology/core#AcademicYear> rdf:type owl:Class ;
+                                                rdfs:comment "An explicit individual period considered by an academic institution to be its primary academic cycle." ;
+                                                rdfs:label "Academic Year" .
+
+
+###  http://vivoweb.org/ontology/core#Course
+<http://vivoweb.org/ontology/core#Course> rdf:type owl:Class ;
+                                          rdfs:comment "A course as taught in one time period by one or more instructors, normally but not always for credit." ;
+                                          rdfs:label "Course" .
+
+
+###  http://www.fonte-project.net/ontologies/SICRA.owlTaxonomiaBloom
+<http://www.fonte-project.net/ontologies/SICRA.owlTaxonomiaBloom> rdf:type owl:Class ;
+                                                                  rdfs:comment "Bloom’s Taxonomy is a classification of the different objectives and skills that educators set for their students (learning objectives)." ;
+                                                                  rdfs:label "Bloom taxonomy" .
+
+
+###  http://www.ontologydesignpatterns.org/cp/owl/timeinterval.owl#TimeInterval
+<http://www.ontologydesignpatterns.org/cp/owl/timeinterval.owl#TimeInterval> rdf:type owl:Class ;
+                                                                             rdfs:comment "To represent time intervals." ;
+                                                                             rdfs:label "Time Interval" .
+
+
+###  http://www.teste/ontologies/IEEE_RCD_Impl.owlCompetence
+<http://www.teste/ontologies/IEEE_RCD_Impl.owlCompetence> rdf:type owl:Class ;
+                                                          rdfs:comment "Corresponde ao conceito \"Reusable Competency Definition\" da norma IEEE 1484.20.1"@pt ;
+                                                          rdfs:label "Competence" .
+
+
+###  http://www.w3.org/2004/02/skos/core#Collection
+<http://www.w3.org/2004/02/skos/core#Collection> rdf:type owl:Class ;
+                                                 rdfs:comment "Collections are labeled and/or ordered groups of SKOS concepts." ;
+                                                 rdfs:label "Collection" .
+
+
+###  http://www.w3.org/2004/02/skos/core#Concept
+<http://www.w3.org/2004/02/skos/core#Concept> rdf:type owl:Class ;
+                                              rdfs:comment "A SKOS concept can be viewed as an idea or notion; a unit of thought." ;
+                                              rdfs:label "Concept" .
+
+
+###  http://xmlns.com/foaf/0.1/Agent
+<http://xmlns.com/foaf/0.1/Agent> rdf:type owl:Class ;
+                                  rdfs:comment "An agent (eg. person, group, software or physical artifact). " ;
+                                  rdfs:label "Agent" .
+
+
+###  http://xmlns.com/foaf/0.1/Organization
+<http://xmlns.com/foaf/0.1/Organization> rdf:type owl:Class ;
+                                         rdfs:subClassOf <http://xmlns.com/foaf/0.1/Agent> ;
+                                         rdfs:comment "The Organization class represents a kind of Agent corresponding to social instititutions such as companies, societies etc." ;
+                                         rdfs:label "Organization" .
+
+
+###  http://xmlns.com/foaf/0.1/Person
+<http://xmlns.com/foaf/0.1/Person> rdf:type owl:Class ;
+                                   rdfs:subClassOf <http://xmlns.com/foaf/0.1/Agent> ;
+                                   rdfs:comment "A person." ;
+                                   rdfs:label "Person" .
+
+
+#################################################################
+#    Annotations
+#################################################################
+
+<http://purl.org/dc/terms/creator> rdfs:comment "An entity primarily responsible for making the resource." ;
+                                   rdfs:label "creator" .
+
+
+#################################################################
+#    General axioms
+#################################################################
+
+[ rdf:type owl:AllDisjointClasses ;
+  owl:members ( :Accessibility
+                :Attendance
+                :DropOut
+                :Qualification
+              )
+] .
+
+
+###  Generated by the OWL API (version 5.1.9) https://github.com/owlcs/owlapi/
