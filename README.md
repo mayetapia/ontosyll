@@ -31,7 +31,7 @@ NeOn methodology proposes a set of activities to carry out the building of an on
 The documentation of OntoSyllabus is available in [this link.](https://jachicaiza.github.io/ontologyDoc/)
 
 ## OntoSyllabus OWL and RDF files
-The OWL and RDF files of OntoSyllabus is available here [this link.](https://github.com/mayetapia/ontosyllabus/tree/master/Ontology)
+The OWL and RDF files of OntoSyllabus is available [here.](https://github.com/mayetapia/ontosyllabus/tree/master/Ontology)
 
 
 
