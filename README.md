@@ -28,7 +28,7 @@ NeOn methodology proposes a set of activities to carry out the building of an on
 </p>
 
 ## OntoSyllabus Documentation
-The documentation of OntoSyllabus is available in [this link](https://jachicaiza.github.io/ontologyDoc/)
+The documentation of OntoSyllabus is available in [this link.](https://jachicaiza.github.io/ontologyDoc/)
 
 
 
