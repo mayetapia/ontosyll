@@ -1,4 +1,4 @@
-# OntoSyllabus (ontosyll)
+# OntoSyllabus
 
 The syllabus is a relevant document to organize how the teaching-learning process will be carried out during anacademic course in Higher Education Institutions (HEI). Usually, this document is written in a human-readable format  that  not  enable  automatic  processing  through  intelligent  services  to  support  teaching  and  learning. Therefore, we created an ontology for the representation of syllabuses applying the NeOn methodology and waterfall life cycle model. The semantic model of a syllabus will allow the comprehension for both: machines and humans, and it will facilitate the interchange of the data between different services and applications. The semantic description was created based on the results of our three previous studies which helped us to determinate the terms and relations in the syllabus ontology.
 
