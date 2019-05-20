@@ -20,12 +20,15 @@ NeOn is a methodology that supports to build ontologies and ontology networks. I
   <img src="https://user-images.githubusercontent.com/43136359/56053061-e171da00-5d07-11e9-9cf3-04d33bc2e5ec.PNG">
 </p>
 
-## Syllabus Ontology Creation
+## OntoSyllabus Creation
 NeOn methodology proposes a set of activities to carry out the building of an ontology. In the next graph, we show the activities that we followed in the syllabus ontology creation.
 
 <p align="center">
   <img src="https://user-images.githubusercontent.com/43136359/56059536-25b9a600-5d19-11e9-9f3b-375242b3f5f2.PNG">
 </p>
+
+## OntoSyllabus Documentation
+The documentation of OntoSyllabus is available in [this link](https://jachicaiza.github.io/ontologyDoc/)
 
 
 
