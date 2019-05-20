@@ -23,12 +23,13 @@
      xmlns:teach="http://linkedscience.org/teach/ns#"
      xmlns:schema="http://schema.org/">
     <owl:Ontology rdf:about="http://purl.org/he/syllabus/ontology#">
+        <dct:contributor>Mari Carmen Suárez-Figueroa</dct:contributor>
+        <dct:creator>Janneth Chicaiza</dct:creator>
         <dct:creator>Mariela Tapia-Leon</dct:creator>
-        <dct:rights>Janneth Chicaiza</dct:rights>
         <rdfs:comment xml:lang="en">Syllabus ontology provide a consensual knowledge model of syllabus domain. This model is a compilation of the main terms and objects for this particular domain and could be used by Higher Education Institutes.</rdfs:comment>
         <rdfs:comment>This work is distribution under a Creative Commons Atribution License (https://creativecommons.org/licenses/by/4.0/legalcode)</rdfs:comment>
         <rdfs:label>Syllabus ontology</rdfs:label>
-        <owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1.4</owl:versionInfo>
+        <owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1.5</owl:versionInfo>
     </owl:Ontology>
     
 

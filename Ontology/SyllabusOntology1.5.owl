@@ -29,12 +29,16 @@
     <Prefix name="teach" IRI="http://linkedscience.org/teach/ns#"/>
     <Prefix name="schema" IRI="http://schema.org/"/>
     <Annotation>
-        <AnnotationProperty abbreviatedIRI="dct:creator"/>
-        <Literal>Mariela Tapia-Leon</Literal>
+        <AnnotationProperty abbreviatedIRI="dct:contributor"/>
+        <Literal>Mari Carmen Suárez-Figueroa</Literal>
     </Annotation>
     <Annotation>
-        <AnnotationProperty abbreviatedIRI="dct:rights"/>
+        <AnnotationProperty abbreviatedIRI="dct:creator"/>
         <Literal>Janneth Chicaiza</Literal>
+    </Annotation>
+    <Annotation>
+        <AnnotationProperty abbreviatedIRI="dct:creator"/>
+        <Literal>Mariela Tapia-Leon</Literal>
     </Annotation>
     <Annotation>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
@@ -50,7 +54,7 @@
     </Annotation>
     <Annotation>
         <AnnotationProperty abbreviatedIRI="owl:versionInfo"/>
-        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">1.4</Literal>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">1.5</Literal>
     </Annotation>
     <Declaration>
         <Class abbreviatedIRI="teach:Assignment"/>
