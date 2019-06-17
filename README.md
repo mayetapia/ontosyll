@@ -37,6 +37,20 @@ NeOn methodology proposes a set of activities to carry out the building of an on
 | 5 | Intended Uses Monitoring and control of the syllabus.  Homologation of studies. Subject recommendation to help students to explore and select courses in the context of mobility programs. Learning paths (sequence) generation.  Manage an integrated format of the syllabus.  Measure the progress of the students. |
 | 6 | Non-Functional Requirements The ontology will be written in English. The elements that compose the ontology must be appropriately documented to allow subsequent maintenance or reuse in derivative works.                                                                                                            |
 | 7 | Functional Requirements Groups of Competency Question and Answer                                                                                                                                                                                                                                                                     |
+| Question                                                                         | Answer                                                                     |
+|----------------------------------------------------------------------------------|----------------------------------------------------------------------------|
+| What are the information resources available  to teach or learn the course?      | Bibliography resources, learning resources.                                |
+| What are the subjects of the course?                                             | Table of contents, topics, concepts.                                       |
+| Which are the assessments and their deadlines?                                   | Assessment type, number of assessments, deadline.                          |
+| In which classroom the course is dictated?                                       | Classroom number, classroom type.                                          |
+| Who is the instructor?                                                           | Name, department, university, academic degree, email, telephone.           |
+| Where can I find help with the subjects or  with any necessity that comes about? | Study strategies, help.                                                    |
+| Which are the requisites for taking the  course?                                 | Requirements, prerequisites.                                               |
+| How   many   hours and credits have the  course?                                 |  Number of credits, lecture hours, lab hours, autonomous hours,  workload. |
+| How is the course methodology?                                                   | Description.                                                               |
+| Which are the learning outcomes of the course?                                   | Competencies, learning objectives, goal statement, Bloom verb.             |
+| Who creates and approves the syllabus?                                           | Creator, reviewer.                                                         |
+| Are there some policies about the course?                                        | Attendance policy, accessibility, drop out, policy, qualification  policy. |
 ## OntoSyllabus Documentation
 The documentation of OntoSyllabus is available in [this link.](https://jachicaiza.github.io/ontologyDoc/)
 
