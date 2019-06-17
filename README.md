@@ -27,6 +27,15 @@ NeOn methodology proposes a set of activities to carry out the building of an on
   <img src="https://user-images.githubusercontent.com/43136359/56059536-25b9a600-5d19-11e9-9f3b-375242b3f5f2.PNG">
 </p>
 
+## Ontology Requirements Specification Document (ORCID)
+| 1 | Purpose Provide a consensual knowledge model of syllabus domain. This model is a compilation of the main terms and objects for this domain and could be used by HEI.                                                                                                                                                  |
+|---|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| 2 | Scope The level of granularity is directly related to the competency questions and terms identified.                                                                                                                                                                                                                  |
+| 3 | Implementation Language Ontology Web Language (OWL-DL) through the software Protégé.                                                                                                                                                                                                                                  |
+| 4 | Intended End-Users Students, instructors, HEI staff.                                                                                                                                                                                                                                                                  |
+| 5 | Intended Uses Monitoring and control of the syllabus.  Homologation of studies. Subject recommendation to help students to explore and select courses in the context of mobility programs. Learning paths (sequence) generation.  Manage an integrated format of the syllabus.  Measure the progress of the students. |
+| 6 | Non-Functional Requirements The ontology will be written in English. The elements that compose the ontology must be appropriately documented to allow subsequent maintenance or reuse in derivative works.                                                                                                            |
+| 7 | Functional Requirements Groups of Competency Question and Answer                                                                                                                                                                                                                                                      |
 ## OntoSyllabus Documentation
 The documentation of OntoSyllabus is available in [this link.](https://jachicaiza.github.io/ontologyDoc/)
 
