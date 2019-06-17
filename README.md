@@ -28,8 +28,10 @@ NeOn methodology proposes a set of activities to carry out the building of an on
 </p>
 
 ## Ontology Requirements Specification Document (ORCID)
-| 1 | Purpose Provide a consensual knowledge model of syllabus domain. This model is a compilation of the main terms and objects for this domain and could be used by HEI.                                                                                                                                                  |
+|   Ontology Requirements Specification Document                                                                                                                                             |
 |---|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| 1 | Purpose Provide a consensual knowledge model of syllabus domain. This model is a compilation of the main terms and objects for this domain and could be used by HEI.  
+
 | 2 | Scope The level of granularity is directly related to the competency questions and terms identified.                                                                                                                                                                                                                  |
 | 3 | Implementation Language Ontology Web Language (OWL-DL) through the software Protégé.                                                                                                                                                                                                                                  |
 | 4 | Intended End-Users Students, instructors, HEI staff.                                                                                                                                                                                                                                                                  |
