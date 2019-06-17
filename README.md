@@ -28,6 +28,8 @@ NeOn methodology proposes a set of activities to carry out the building of an on
 </p>
 
 ## Ontology Requirements Specification Document (ORCID)
+### General Information
+
 |   | Ontology Requirements Specification Document                                                                                                                                                                                                                                                                          |
 |---|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | 1 | Purpose Provide a consensual knowledge model of syllabus domain. This model is a compilation of the main terms and objects for this domain and could be used by HEI.                                                                                                                                                  |
@@ -37,6 +39,8 @@ NeOn methodology proposes a set of activities to carry out the building of an on
 | 5 | Intended Uses Monitoring and control of the syllabus.  Homologation of studies. Subject recommendation to help students to explore and select courses in the context of mobility programs. Learning paths (sequence) generation.  Manage an integrated format of the syllabus.  Measure the progress of the students. |
 | 6 | Non-Functional Requirements The ontology will be written in English. The elements that compose the ontology must be appropriately documented to allow subsequent maintenance or reuse in derivative works.                                                                                                            |
 | 7 | Functional Requirements Groups of Competency Question and Answer                                                                                                                                                                                                                                                                     |
+### Competency Questions
+
 | Question                                                                         | Answer                                                                     |
 |----------------------------------------------------------------------------------|----------------------------------------------------------------------------|
 | What are the information resources available  to teach or learn the course?      | Bibliography resources, learning resources.                                |
